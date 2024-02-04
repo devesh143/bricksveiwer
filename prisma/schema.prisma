@@ -7,21 +7,21 @@ datasource db {
   url      = env("POSTGRES_PRISMA_URL")
 }
 
-model admin {
-  id        Int       @id @default(autoincrement())
-  name      String
-  password  String
-  createdAt DateTime? @default(now()) @db.Timestamptz(6)
+model mails {
+  id      String   @id @db.Uuid
+  website String?  @db.VarChar(255)
+  email   String?  @unique @db.VarChar(255)
+  created DateTime @default(now()) @db.Timestamp(6)
 }
 
-model messages {
-  id         Int       @id @default(autoincrement())
-  name       String
-  phone      String
-  msg        String
-  formnumber String
-  createdAt  DateTime? @default(now()) @db.Timestamptz(6)
-}
+model bricksviewer {
+  id       String   @unique @id @db.Uuid
+  name     String?  @db.VarChar(255)
+  phone    String?  @db.VarChar(20)
+  message  String?
+  form    String?  @db.VarChar(255)
+  created DateTime @default(now()) @db.Timestamp(6)
+  }
 
 model rotary {
   id       String   @id @db.Uuid

@@ -1,95 +1,135 @@
 "use client";
 
-import { useState } from "react";
+import { fillForm } from "@/functions";
 
-const Form = ({ collection }: { collection: string }) => {
-  const [message, setMessage] = useState("");
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [msg, setMsg] = useState("");
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
-  const submitForm = async (e: any) => {
-    e.preventDefault();
-    if (!name || !phone || !msg) {
-      setMessage("Please fill all the fields!");
-      return;
-    }
-    if (phone.length !== 10 || !phone.match(/^[0-9]+$/)) {
-      setMessage("Please enter a valid phone number!");
-      return;
-    }
-    const res = await fetch(
-      `/api/form-insert?name=${name}&phone=${phone}&msg=${msg}&formnumber=${collection}`
+import { useToast } from "@/components/ui/use-toast";
+
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
+
+const formSchema = z.object({
+  name: z.string().min(2, { message: "Name is too short" }),
+  phone: z
+    .string()
+    .regex(/^\+?\d{10,12}$/, {
+      message: "Invalid Phone Number",
+    })
+    .min(10, { message: "Phone Number is too short" })
+    .max(11, { message: "Phone Number is too long" }),
+  message: z.string(),
+  formname: z.literal("Contact Form"),
+});
+
+export function ContactForm() {
+  const { toast } = useToast();
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      phone: "",
+      message: "",
+      formname: "Contact Form",
+    },
+  });
+
+  function onSubmit(data: z.infer<typeof formSchema>) {
+    const response = fillForm(
+      data.name,
+      data.phone,
+      data.message,
+      data.formname
     );
-    const data = await res.json();
-    if (data.err) {
-      setMessage("Something went wrong!");
-    } else {
-      setMessage("Form submitted successfully!");
-      setName("");
-      setPhone("");
-      setMsg("");
-    }
-  };
+    response.then((res) => {
+      if (res.status === 200) {
+        toast({
+          variant: "default",
+          title: "Message Sent",
+          description: "We will get back to you soon",
+        });
+      } else {
+        toast({
+          variant: "destructive",
+          title: "Message Not Sent",
+          description: "Please try again",
+        });
+      }
+    });
+  }
 
   return (
-    <div className="w-full lg:w-1/2 flex gap-5 flex-col justify-evenly items-end">
-      <div
-        className={`flex ${
-          message === "Form submitted successfully!"
-            ? "bg-green-500"
-            : "bg-red-500"
-        } text-white justify-between items-center w-full  rounded ${
-          message ? "p-2" : "hidden"
-        }`}
-      >
-        <p>{message}</p>
-        <button onClick={() => setMessage("")}>X</button>
-      </div>
-      <form className="w-full flex flex-col gap-5" onSubmit={submitForm}>
-        <div className="w-full flex gap-5">
-          <div className="w-1/2">
-            <p className="w-1/2 text-white text-lg">Name</p>
-            <input
-              type="text"
-              name="name"
-              value={name}
-              placeholder="Name"
-              className="w-full bg-white p-2 rounded text-black"
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
-          <div className="w-1/2">
-            <p className="w-1/2 text-white text-lg">Mobile</p>
-            <input
-              type="phone"
-              name="phone"
-              value={phone}
-              placeholder="+91"
-              className="w-full bg-white p-2 rounded text-black"
-              onChange={(e) => setPhone(e.target.value)}
-            />
-          </div>
-        </div>
-        <div className="w-full flex flex-col">
-          <p className="w-1/2 text-white text-lg">Message</p>
-          <textarea
-            name="comment"
-            placeholder="Message"
-            value={msg}
-            className="w-full bg-white p-2 rounded text-black"
-            onChange={(e) => setMsg(e.target.value)}
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)}>
+        <div className="w-full flex justify-center items-center gap-3">
+          <FormField
+            control={form.control}
+            name="name"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel htmlFor="name">Name</FormLabel>
+                <Input
+                  {...field}
+                  id="name"
+                  type="text"
+                  placeholder="Name"
+                  className="text-skyBlue font-bold text-md"
+                />
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="phone"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel htmlFor="phone">Phone Number</FormLabel>
+                <Input
+                  {...field}
+                  id="phone"
+                  type="tel"
+                  placeholder="(+91) Mobile Number "
+                  className="text-skyBlue font-bold text-md"
+                />
+                <FormMessage />
+              </FormItem>
+            )}
           />
         </div>
-        <button
-          className="bg-white text-black font-bold py-2 px-4 rounded-full transition duration-500 ease-in-out transform  hover:scale-110"
+        <FormField
+          control={form.control}
+          name="message"
+          render={({ field }) => (
+            <FormItem className="mt-3">
+              <FormLabel htmlFor="message">Message</FormLabel>
+              <Textarea
+                {...field}
+                id="message"
+                placeholder="Your Message"
+                className="text-skyBlue font-bold text-md"
+              />
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Button
           type="submit"
+          className="mt-3 text-xl font-bold text-white bg-skyBlue border-white border-4 hover:text-skyBlue hover:bg-white transition-all duration-300 ease-in-out rounded-lg"
         >
-          Send Message
-        </button>
+          Submit
+        </Button>
       </form>
-    </div>
+    </Form>
   );
-};
-
-export default Form;
+}

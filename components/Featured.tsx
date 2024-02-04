@@ -16,7 +16,7 @@ const Properties = () => {
     <section className="bg-white w-full ">
       <div className="container mx-auto flex flex-col items-center justify-center px-5 md:px-10 lg:px-0">
         <div className="w-full mt-10 p-8 flex justify-center items-center">
-          <h1 className="text-2xl text-center font-bold lg:text-4xl">
+          <h1 className="text-2xl text-center font-bold md:text-3xl lg:text-4xl">
             Featured Properties
           </h1>
         </div>
@@ -24,7 +24,7 @@ const Properties = () => {
           <div className="w-full flex flex-col gap-10 justify-center lg:flex-row">
             <Link
               href="/properties/mewsgate"
-              className="w-full flex flex-col items-center  border-2 border-gray-200 rounded-lg hover:border-skyBlue transition duration-500 ease-in-out lg:w-1/2"
+              className="w-full flex flex-col items-center border-2 border-gray-200 rounded-lg hover:border-black transition duration-500 ease-in-out lg:w-1/2"
             >
               <Card className="bg-gray-100 h-full opaParent">
                 <CardHeader>
@@ -41,7 +41,7 @@ const Properties = () => {
                       width={600}
                       height={300}
                       alt="featured"
-                      className="rounded-lg h-full w-full border-skyBlue border-2 opa"
+                      className="rounded-lg h-full w-full opa"
                     />
                     <div className="dot dLeft"></div>
                     <div className="dot dMid"></div>
@@ -79,7 +79,7 @@ const Properties = () => {
             </Link>
             <Link
               href="/properties/gateway"
-              className="w-full flex flex-col border-2 border-gray-200 rounded-lg hover:border-safron transition duration-500 ease-in-out lg:w-1/2"
+              className="w-full flex flex-col border-2 border-gray-200 rounded-lg hover:border-black transition duration-500 ease-in-out lg:w-1/2"
             >
               <Card className="bg-gray-100 h-full opaParent">
                 <CardHeader>
@@ -96,7 +96,7 @@ const Properties = () => {
                       width={600}
                       height={300}
                       alt="featured"
-                      className="rounded-lg h-full w-full border-safron border-2 opa"
+                      className="rounded-lg h-full w-full opa"
                     />
                     <div className="dot dLeft"></div>
                     <div className="dot dMid"></div>
@@ -134,7 +134,7 @@ const Properties = () => {
           <div className="w-full flex flex-col gap-10 justify-center items-center lg:flex-row">
             <Link
               href="/properties/gateway"
-              className="w-full flex flex-col border-2 border-gray-200 rounded-lg hover:border-safron transition duration-500 ease-in-out lg:w-1/2"
+              className="w-full flex flex-col border-2 border-gray-200 rounded-lg hover:border-black transition duration-500 ease-in-out lg:w-1/2"
             >
               <Card className="bg-gray-100 h-full opaParent">
                 <CardHeader>
@@ -151,7 +151,7 @@ const Properties = () => {
                       width={600}
                       height={300}
                       alt="featured"
-                      className="rounded-lg h-full w-full border-safron border-2 opa"
+                      className="rounded-lg h-full w-full opa"
                     />
                     <div className="dot dLeft"></div>
                     <div className="dot dMid"></div>
@@ -187,7 +187,7 @@ const Properties = () => {
             </Link>
             <Link
               href="/properties/mewsgate"
-              className="w-full flex flex-col items-center  border-2 border-gray-200 rounded-lg hover:border-skyBlue transition duration-500 ease-in-out lg:w-1/2"
+              className="w-full flex flex-col items-center border-2 border-gray-200 rounded-lg hover:border-black transition duration-500 ease-in-out lg:w-1/2"
             >
               <Card className="bg-gray-100 h-full opaParent">
                 <CardHeader>
@@ -204,7 +204,7 @@ const Properties = () => {
                       width={600}
                       height={300}
                       alt="featured"
-                      className="rounded-lg h-full w-full border-skyBlue border-2 opa"
+                      className="rounded-lg h-full w-full opa"
                     />
                     <div className="dot dLeft"></div>
                     <div className="dot dMid"></div>
