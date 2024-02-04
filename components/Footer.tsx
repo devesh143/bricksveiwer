@@ -112,14 +112,14 @@ export function Footer() {
           <Link href="/" className="mt-4 text-2sm hover:text-skyBlue">
             Home
           </Link>
-          <Link href="/project" className="mt-1 text-2sm hover:text-skyBlue">
-            Projects
-          </Link>
           <Link href="/properties" className="mt-1 text-2sm hover:text-skyBlue">
             Properties
           </Link>
-          <Link href="/contact-us" className="mt-1 text-2sm hover:text-skyBlue">
-            Contact Us
+          <Link href="/privacy" className="mt-1 text-2sm hover:text-skyBlue">
+            Privacy Policy
+          </Link>
+          <Link href="/terms" className="mt-1 text-2sm hover:text-skyBlue">
+            Terms & Conditions
           </Link>
         </div>
         <hr className="w-full lg:hidden" />

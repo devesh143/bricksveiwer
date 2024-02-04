@@ -3,64 +3,71 @@
 import * as React from "react";
 import Link from "next/link";
 
+import { fillForm } from "@/functions";
+
+import { useToast } from "@/components/ui/use-toast";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+
+const formSchema = z.object({
+  name: z.string().min(2, { message: "Name is too short" }),
+  phone: z
+    .string()
+    .regex(/^\+?\d{10,12}$/, {
+      message: "Invalid Phone Number",
+    })
+    .min(10, { message: "Phone Number is too short" })
+    .max(11, { message: "Phone Number is too long" }),
+  message: z.string(),
+  formname: z.literal("Contact Form"),
+});
+
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
-import { cn } from "@/lib/utils";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogHeader,
+} from "@/components/ui/dialog";
 
 import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+  Form,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-];
-
 export function Header() {
+  const { toast } = useToast();
+
+  const [phone, setPhone] = useState("");
+  const [open, setOpen] = useState(true);
+  const [openTwo, setOpenTwo] = useState(false);
+
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      phone: "",
+      message: "",
+      formname: "Contact Form",
+    },
+  });
+
   const pathname = usePathname();
   const [isTop, setIsTop] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
+
+  if (phone !== "") {
+    form.setValue("phone", phone);
+  }
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -77,6 +84,33 @@ export function Header() {
       window.removeEventListener("scroll", scrollListener);
     };
   }, []);
+
+  function onSubmit(data: z.infer<typeof formSchema>) {
+    setPhone(data.phone);
+    setOpen(false);
+    setOpenTwo(false);
+    const response = fillForm(
+      data.name,
+      data.phone,
+      data.message,
+      data.formname
+    );
+    response.then((res) => {
+      if (res.status === 200) {
+        toast({
+          variant: "default",
+          title: "Message Sent",
+          description: "We will get back to you soon",
+        });
+      } else {
+        toast({
+          variant: "destructive",
+          title: "Message Not Sent",
+          description: "Please try again",
+        });
+      }
+    });
+  }
 
   return (
     <nav
@@ -138,9 +172,83 @@ export function Header() {
               >
                 <p className="m-2 mx-3 text-md">+91-7055455847</p>
               </Link>
-              <Button className="hidden text-sm font-bold text-white bg-safron baseline lg:block border-safron border-2 hover:bg-transparent hover:text-safron transition duration-500 ease-in-out">
-                Contact Me!
-              </Button>
+              <Dialog open={open} onOpenChange={setOpen}>
+                <DialogTrigger className="hidden text-lg font-bold text-white bg-safron baseline lg:block border-safron border-2 hover:bg-transparent hover:text-safron transition duration-500 ease-in-out rounded-md px-2 py-1">
+                  Contact Me!
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-md">
+                  <DialogHeader className="container w-full">
+                    <h2 className="text-3xl font-bold text-center">
+                      Contact <span className="text-safron">Me!</span>
+                    </h2>
+                  </DialogHeader>
+                  <Form {...form}>
+                    <form
+                      onSubmit={form.handleSubmit(onSubmit)}
+                      className="container w-full flex flex-col gap-4 p-4 bg-white rounded-lg"
+                    >
+                      <div className="w-full flex justify-center items-center gap-2">
+                        <FormField
+                          control={form.control}
+                          name="name"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel htmlFor="name">Name</FormLabel>
+                              <Input
+                                {...field}
+                                id="name"
+                                type="text"
+                                placeholder="Name"
+                                className=""
+                              />
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                        <FormField
+                          control={form.control}
+                          name="phone"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel htmlFor="phone">Phone</FormLabel>
+                              <Input
+                                {...field}
+                                id="phone"
+                                type="phone"
+                                placeholder="(+91)"
+                                className=""
+                              />
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                      </div>
+                      <FormField
+                        control={form.control}
+                        name="message"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel htmlFor="message">Message</FormLabel>
+                            <Textarea
+                              {...field}
+                              id="message"
+                              placeholder="Your Message Here..."
+                              className=""
+                            />
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                      <Button
+                        type="submit"
+                        className="text-xl font-bold text-white bg-safron border-safron border-2 hover:text-safron hover:bg-white transition-all duration-300 ease-in-out"
+                      >
+                        Send Message
+                      </Button>
+                    </form>
+                  </Form>
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
           <Button
@@ -204,38 +312,86 @@ export function Header() {
             >
               <p className="text-lg">Contact Us</p>
             </Link>
-            <Button className="font-bold text-white text-lg bg-safron baseline border-safron border-2 hover:bg-transparent hover:text-safron">
-              Contact Me!
-            </Button>
+            <Dialog open={openTwo} onOpenChange={setOpenTwo}>
+              <DialogTrigger className="text-lg font-bold text-white bg-safron baseline lg:block border-safron border-2 hover:bg-transparent hover:text-safron transition duration-500 ease-in-out rounded-md px-2 py-1">
+                Contact Me!
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-md">
+                <DialogHeader className="container w-full">
+                  <h2 className="text-3xl font-bold text-center">
+                    Contact <span className="text-safron">Me!</span>
+                  </h2>
+                </DialogHeader>
+                <Form {...form}>
+                  <form
+                    onSubmit={form.handleSubmit(onSubmit)}
+                    className="container w-full flex flex-col gap-4 p-4 bg-white rounded-lg"
+                  >
+                    <div className="w-full flex justify-center items-center gap-2">
+                      <FormField
+                        control={form.control}
+                        name="name"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel htmlFor="name">Name</FormLabel>
+                            <Input
+                              {...field}
+                              id="name"
+                              type="text"
+                              placeholder="Name"
+                              className=""
+                            />
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                      <FormField
+                        control={form.control}
+                        name="phone"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel htmlFor="phone">Phone</FormLabel>
+                            <Input
+                              {...field}
+                              id="phone"
+                              type="phone"
+                              placeholder="phone"
+                              className=""
+                            />
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                    </div>
+                    <FormField
+                      control={form.control}
+                      name="message"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel htmlFor="message">Message</FormLabel>
+                          <Textarea
+                            {...field}
+                            id="message"
+                            placeholder="message"
+                            className=""
+                          />
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    <Button
+                      type="submit"
+                      className="text-xl font-bold text-white bg-safron border-safron border-2 hover:text-safron hover:bg-white transition-all duration-300 ease-in-out"
+                    >
+                      Send Message
+                    </Button>
+                  </form>
+                </Form>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </div>
     </nav>
   );
 }
-
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </div>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  );
-});
-ListItem.displayName = "ListItem";
