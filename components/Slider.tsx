@@ -61,11 +61,13 @@ export function Slider() {
                         className="w-full h-full object-cover object-center overflow-hidden rounded-lg z-0 opacity-90"
                       />
                     </CardHeader>
-                    <CardContent className="w-[150px] flex bg-black bg-opacity-70 flex-col absolute items-center justify-center z-10 bottom-2 p-5 rounded-lg">
-                      <h1 className="text-2xl font-bold text-skyBlue">
+                    <CardContent className="w-[125px] flex bg-black bg-opacity-70 flex-col absolute items-center justify-center z-10 bottom-2 px-3 py-1 rounded-lg">
+                      <h1 className="text-xl sm:text-2xl font-bold uppercase text-skyBlue">
                         {card.title}
                       </h1>
-                      <p className="text-sm text-white">{card.content}</p>
+                      <p className="text-sm lowercase text-white">
+                        {card.content}
+                      </p>
                     </CardContent>
                   </Card>
                 </CarouselItem>
@@ -89,7 +91,7 @@ export function Slider() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             euismod bibendum laoreet.
           </p>
-          <Button className="mt-5 bg-safron border-safron border-2 text-white text-lg font-medium hover:text-safron hover:bg-white">
+          <Button className="mt-5 bg-safron border-safron border-2 text-white text-lg font-medium hover:text-safron hover:bg-white mx-2 sm:mx-0">
             Learn More
           </Button>
         </div>

@@ -116,7 +116,7 @@ export default function Hero() {
           </Card>
         </CarouselItem>
       </CarouselContent>
-      <div className="absolute flex justify-center items-center animate-bounce z-10 left-1/2 bottom-5">
+      <div className="absolute flex justify-center items-center animate-bounce z-10 bottom-5 left-1/2">
         <div className="mouse"></div>
       </div>
       <CarouselPrevious className="absolute left-10" />

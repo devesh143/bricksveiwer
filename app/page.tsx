@@ -20,8 +20,10 @@ const Home = () => {
             <ContactForm />
           </div>
           <div className="w-full h-full flex flex-col md:w-1/2 border-white md:ml-5 border-b-2 md:border-0">
-            <h1 className="text-6xl font-bold rounded-lg">Contact Us!</h1>
-            <p className="text-justify text-md font-bold mb-5 md:mb-0 lg:pr-36 mt-5">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold rounded-lg">
+              Contact Us!
+            </h1>
+            <p className="text-justify text-sm sm:text-normal font-bold mb-5 md:mb-0 lg:pr-36 mt-5">
               Fill out the form to get in touch with our Real Estate and
               Construction Consulting team. We are here to help you with all
               your needs and provide expert advice.
