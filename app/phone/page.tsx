@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { redirect } from "next/navigation";
 import { fillForm } from "@/functions";
 
-import { useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -38,7 +38,7 @@ import { Input } from "@/components/ui/input";
 
 const Phone = () => {
   const [phone, setPhone] = useState("");
-  const redirectUl = useSearchParams().get("redirect");
+  const redirectUl = usePathname().split("?redirect=")[1];
 
   const { toast } = useToast();
   const form = useForm<z.infer<typeof formSchema>>({
