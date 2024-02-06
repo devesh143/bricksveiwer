@@ -65,15 +65,15 @@ export function Header() {
   const [isTop, setIsTop] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
 
-  if (phone !== "") {
-    form.setValue("phone", phone);
-  }
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   useEffect(() => {
+    if (phone !== "") {
+      localStorage.setItem("phone", phone);
+    }
+
     const scrollListener = () => {
       setIsTop(window.scrollY < 100);
     };
@@ -83,7 +83,7 @@ export function Header() {
     return () => {
       window.removeEventListener("scroll", scrollListener);
     };
-  }, []);
+  }, [phone]);
 
   function onSubmit(data: z.infer<typeof formSchema>) {
     setPhone(data.phone);

@@ -8,6 +8,8 @@ import { z } from "zod";
 
 import { useToast } from "@/components/ui/use-toast";
 
+import { usePathname } from "next/navigation";
+
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -18,6 +20,8 @@ import {
 } from "@/components/ui/form";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
+
+import { useEffect, useState } from "react";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name is too short" }),
@@ -33,6 +37,9 @@ const formSchema = z.object({
 });
 
 export function ContactForm() {
+  const [phone, setPhone] = useState("");
+  const pathname = usePathname();
+
   const { toast } = useToast();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -44,7 +51,14 @@ export function ContactForm() {
     },
   });
 
+  useEffect(() => {
+    if (phone !== "") {
+      localStorage.setItem("phone", phone);
+    }
+  }, [phone]);
+
   function onSubmit(data: z.infer<typeof formSchema>) {
+    setPhone(data.phone);
     const response = fillForm(
       data.name,
       data.phone,
@@ -99,7 +113,7 @@ export function ContactForm() {
                   {...field}
                   id="phone"
                   type="tel"
-                  placeholder="(+91) Mobile Number "
+                  placeholder="(+91)"
                   className="text-skyBlue font-bold text-md"
                 />
                 <FormMessage />
