@@ -86,7 +86,7 @@ const Phone = () => {
       localStorage.setItem("phone", phone);
       redirect(redirectUl || "/");
     }
-  }, [phone]);
+  }, [phone, redirectUl]);
 
   return (
     <section className="w-full bg-skyBlue h-dvh flex justify-center items-center">

@@ -11,7 +11,7 @@ const Gateway = () => {
     if (phn) {
       setPhone(phn);
     } else {
-      redirect("/phone?redirect=/properties/Gateway");
+      redirect("/phone?redirect=/properties/gateway");
     }
   }, []);
 
