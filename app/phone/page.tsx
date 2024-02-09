@@ -38,7 +38,7 @@ import { Input } from "@/components/ui/input";
 
 const Phone = () => {
   const [phone, setPhone] = useState("");
-  const redirectUl = usePathname().split("?redirect=")[1];
+  const redirectUl = "/properties";
 
   const { toast } = useToast();
   const form = useForm<z.infer<typeof formSchema>>({
@@ -84,7 +84,7 @@ const Phone = () => {
     }
     if (phone !== "") {
       localStorage.setItem("phone", phone);
-      redirect(redirectUl || "/");
+      redirect(redirectUl);
     }
   }, [phone, redirectUl]);
 

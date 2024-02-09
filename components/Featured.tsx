@@ -23,13 +23,13 @@ const Properties = () => {
         <div className="container w-full h-auto flex flex-col gap-10 justify-center items-center">
           <div className="w-full flex flex-col gap-10 justify-center lg:flex-row">
             <Link
-              href="/properties/mewsgate"
+              href="/properties/cityofdreams"
               className="w-full flex flex-col items-center border-2 border-gray-200 rounded-lg hover:border-black transition duration-500 ease-in-out lg:w-1/2"
             >
-              <Card className="bg-gray-100 h-full opaParent">
+              <Card className="bg-gray-100 h-full flex flex-col justify-between opaParent">
                 <CardHeader>
                   <CardTitle className="text-xl sm:text-2xl font-bold mb-2 md:text-3xl lg:text-4xl">
-                    Mews Gate{" "}
+                    City of Dreams{" "}
                     <span className="text-xl sm:text-2xl font-bold md:text-3xl lg:text-4xl text-skyBlue">
                       {" "}
                       Property
@@ -37,7 +37,7 @@ const Properties = () => {
                   </CardTitle>
                   <div className="dContainer bg-black rounded-lg">
                     <Image
-                      src="/images/mewsgate/mewsgate.png"
+                      src="/properties/sbp/sbp.png"
                       width={600}
                       height={300}
                       alt="featured"
@@ -59,7 +59,7 @@ const Properties = () => {
                     Starting at
                     <span className="font-bold text-skyBlue">
                       {" "}
-                      ₹ 25.90 Lacs
+                      ₹ 73.90 Lacs
                     </span>
                   </h2>
                   <div className="w-full flex justify-between items-end gap-10 mt-4 sm:mt-2">
@@ -78,10 +78,63 @@ const Properties = () => {
               </Card>
             </Link>
             <Link
+              href="/properties/foressta"
+              className="w-full flex flex-col items-center border-2 border-gray-200 rounded-lg hover:border-black transition duration-500 ease-in-out lg:w-1/2"
+            >
+              <Card className="bg-gray-100 h-full flex flex-col justify-between opaParent">
+                <CardHeader>
+                  <CardTitle className="text-xl sm:text-2xl font-bold mb-2 md:text-3xl lg:text-4xl">
+                    <span className="text-xl sm:text-2xl font-bold md:text-3xl lg:text-4xl text-safron">
+                      Foressta{" "}
+                    </span>
+                    Serviced Suites/Villas
+                  </CardTitle>
+                  <div className="dContainer bg-black rounded-lg">
+                    <Image
+                      src="/images/hero/2.jpg"
+                      width={600}
+                      height={300}
+                      alt="featured"
+                      className="rounded-lg h-full w-full opa"
+                    />
+                    <div className="dot dLeft"></div>
+                    <div className="dot dMid"></div>
+                    <div className="dot dRight"></div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-500 w-full text-justify text-sm md:text-base">
+                    Foressta is a unique blend of nature and luxury. It is a
+                    place where you can live life to the fullest.
+                  </p>
+                </CardContent>
+                <CardFooter className="flex flex-col items-start justify-start">
+                  <h2 className="text-xl sm:text-2xl font-bold flex flex-col md:flex-row md:gap-3">
+                    Starting at
+                    <span className="font-bold text-safron"> ₹ 2.1 Crore</span>
+                  </h2>
+                  <div className="w-full flex justify-between items-end gap-10 mt-4 sm:mt-2">
+                    <Button className="bg-safron text-white font-bold py-1 px-2 md:py-2 md:px-4 hover:bg-transparent transform hover:-translate-y-1 hover:text-safron hover:scale-[102%] rounded-md transition duration-500 ease-in-out border-safron border-2">
+                      View Property
+                    </Button>
+                    <Image
+                      src="/images/mewsgate/logo.png"
+                      width={50}
+                      height={50}
+                      alt="logo"
+                      className="rounded"
+                    />
+                  </div>
+                </CardFooter>
+              </Card>
+            </Link>
+          </div>
+          <div className="w-full flex flex-col-reverse gap-10 justify-center items-center lg:flex-row">
+            <Link
               href="/properties/gateway"
               className="w-full flex flex-col items-center border-2 border-gray-200 rounded-lg hover:border-black transition duration-500 ease-in-out lg:w-1/2"
             >
-              <Card className="bg-gray-100 h-full opaParent">
+              <Card className="bg-gray-100 h-full flex flex-col justify-between opaParent">
                 <CardHeader>
                   <CardTitle className="text-xl sm:text-2xl font-bold mb-2 md:text-3xl lg:text-4xl">
                     The Gateway{" "}
@@ -130,64 +183,11 @@ const Properties = () => {
                 </CardFooter>
               </Card>
             </Link>
-          </div>
-          <div className="w-full flex flex-col-reverse gap-10 justify-center items-center lg:flex-row">
-            <Link
-              href="/properties/foressta"
-              className="w-full flex flex-col items-center border-2 border-gray-200 rounded-lg hover:border-black transition duration-500 ease-in-out lg:w-1/2"
-            >
-              <Card className="bg-gray-100 h-full opaParent">
-                <CardHeader>
-                  <CardTitle className="text-xl sm:text-2xl font-bold mb-2 md:text-3xl lg:text-4xl">
-                    <span className="text-xl sm:text-2xl font-bold md:text-3xl lg:text-4xl text-safron">
-                      Foressta{" "}
-                    </span>
-                    Serviced Suites/Villas
-                  </CardTitle>
-                  <div className="dContainer bg-black rounded-lg">
-                    <Image
-                      src="/images/hero/2.jpg"
-                      width={600}
-                      height={300}
-                      alt="featured"
-                      className="rounded-lg h-full w-full opa"
-                    />
-                    <div className="dot dLeft"></div>
-                    <div className="dot dMid"></div>
-                    <div className="dot dRight"></div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-500 w-full text-justify text-sm md:text-base">
-                    Foressta is a unique blend of nature and luxury. It is a
-                    place where you can live life to the fullest.
-                  </p>
-                </CardContent>
-                <CardFooter className="flex flex-col items-start justify-start">
-                  <h2 className="text-xl sm:text-2xl font-bold flex flex-col md:flex-row md:gap-3">
-                    Starting at
-                    <span className="font-bold text-safron"> ₹ 2.1 Crore</span>
-                  </h2>
-                  <div className="w-full flex justify-between items-end gap-10 mt-4 sm:mt-2">
-                    <Button className="bg-safron text-white font-bold py-1 px-2 md:py-2 md:px-4 hover:bg-transparent transform hover:-translate-y-1 hover:text-safron hover:scale-[102%] rounded-md transition duration-500 ease-in-out border-safron border-2">
-                      View Property
-                    </Button>
-                    <Image
-                      src="/images/mewsgate/logo.png"
-                      width={50}
-                      height={50}
-                      alt="logo"
-                      className="rounded"
-                    />
-                  </div>
-                </CardFooter>
-              </Card>
-            </Link>
             <Link
               href="/properties/mewsgate"
               className="w-full flex flex-col items-center border-2 border-gray-200 rounded-lg hover:border-black transition duration-500 ease-in-out lg:w-1/2"
             >
-              <Card className="bg-gray-100 h-full opaParent">
+              <Card className="bg-gray-100 h-full flex flex-col justify-between opaParent">
                 <CardHeader>
                   <CardTitle className="text-xl sm:text-2xl font-bold mb-2 md:text-3xl lg:text-4xl">
                     Mews Gate{" "}
