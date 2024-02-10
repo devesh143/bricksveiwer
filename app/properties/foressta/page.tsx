@@ -197,7 +197,7 @@ const Foressta = () => {
                   <DialogTrigger className="text-skyBlue text-sm md:text-lg font-bold">
                     Click to Open Construction Link Plans
                   </DialogTrigger>
-                  <DialogContent>
+                  <DialogContent className="h-96 overflow-auto ">
                     <Table>
                       <TableCaption>
                         Expected Date Of Possession {`(EDP)`} - 31st December
@@ -326,7 +326,7 @@ const Foressta = () => {
                   <DialogTrigger className="text-skyBlue text-sm md:text-lg font-bold">
                     Click to Open Construction Link Plans
                   </DialogTrigger>
-                  <DialogContent>
+                  <DialogContent className="h-96 overflow-auto ">
                     <Table>
                       <TableCaption>
                         Expected Date Of Possession {`(EDP)`} - 31st December

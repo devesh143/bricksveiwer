@@ -69,3 +69,114 @@ export async function subscibeNewsletter(email: string, website: string) {
     };
   }
 }
+
+export async function getAllEmails() {
+  // get all emails of website="bricksviewer"
+  const prisma = new PrismaClient();
+  try {
+    const response = await prisma.mails.findMany({
+      where: {
+        website: "bricksviewer",
+      },
+    });
+
+    if (response) {
+      return {
+        status: 200,
+        message: "All emails",
+        data: response,
+      };
+    } else {
+      return {
+        status: 400,
+        message: "Something went wrong",
+      };
+    }
+  } catch (error) {
+    return {
+      status: 500,
+      message: "Something went wrong",
+    };
+  }
+}
+
+export async function deleteEmail(id: string) {
+  const prisma = new PrismaClient();
+  try {
+    const response = await prisma.mails.delete({
+      where: {
+        id: id,
+      },
+    });
+
+    if (response) {
+      return {
+        status: 200,
+        message: "Deleted successfully",
+      };
+    } else {
+      return {
+        status: 400,
+        message: "Something went wrong",
+      };
+    }
+  } catch (error) {
+    return {
+      status: 500,
+      message: "Something went wrong",
+    };
+  }
+}
+
+export async function getAllPhoneNumbers() {
+  const prisma = new PrismaClient();
+  try {
+    const response = await prisma.bricksviewer.findMany();
+
+    if (response) {
+      return {
+        status: 200,
+        message: "All phone numbers",
+        data: response,
+      };
+    } else {
+      return {
+        status: 400,
+        message: "Something went wrong",
+      };
+    }
+  } catch (error) {
+    return {
+      status: 500,
+      message: "Something went wrong",
+    };
+  }
+}
+
+export async function deleteRecord(id: string) {
+  const prisma = new PrismaClient();
+  try {
+    const response = await prisma.bricksviewer.delete({
+      where: {
+        id: id,
+      },
+    });
+
+    if (response) {
+      return {
+        status: 200,
+        message: "Deleted successfully",
+      };
+    } else {
+      return {
+        status: 400,
+        message: "Something went wrong",
+      };
+    }
+  } catch (error) {
+    return {
+      status: 500,
+      message: "Something went wrong",
+    };
+  }
+}
