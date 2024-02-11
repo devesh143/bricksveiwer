@@ -11,13 +11,47 @@ import { Footer } from "@/components/Footer";
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--montserrat" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bricksviewer.com"),
+  generator: "BricksViewer.com",
   title: "BricksViewer.com",
   description:
     "We provide our clients with the best properties and property management services in India. We are a one-stop shop for all your property needs. We provide a wide range of services, including buying, selling, renting, and leasing.",
-  keywords:
-    "Real Estate, Properties, Buy, Rent, Sell, Book, Rent, Lease, Bricks, BricksViewer, BricksViewer.com, Bricks Viewer",
+  keywords: [
+    "Real Estate",
+    "Property Management",
+    "Property Monitoring",
+    "Construction",
+    "Rental Assistance",
+    "Interior Design",
+    "Real Estate Buying/Selling",
+    "BricksViewer.com",
+    "WebArc.One",
+    "Bricks Viewer",
+  ],
   icons: "/favicon.jpg",
+  applicationName: "BricksViewer.com",
+  referrer: "origin-when-cross-origin",
+  authors: [
+    { name: "BricksViewer.com" },
+    { name: "WebArc.One", url: "https://webarc.one" },
+  ],
+  creator: "WebArc.One",
+  publisher: "BricksViewer.com",
+  formatDetection: {
+    email: true,
+    telephone: true,
+    address: false,
+  },
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+      "en-IN": "/en-IN",
+    },
+  },
   openGraph: {
+    type: "website",
+    url: "https://bricksviewer.com",
     title: "BricksViewer.com",
     description:
       "We provide our clients with the best properties and property management services in India. We are a one-stop shop for all your property needs. We provide a wide range of services, including buying, selling, renting, and leasing.",
@@ -25,7 +59,7 @@ export const metadata: Metadata = {
       {
         url: "/favicon.jpg",
         width: 800,
-        height: 600,
+        height: 800,
         alt: "BricksViewer.com",
       },
     ],
