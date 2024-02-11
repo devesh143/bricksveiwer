@@ -150,6 +150,9 @@ export function Header() {
               >
                 <p className="text-lg">Properties</p>
               </Link>
+              <Link href="/#testimonials" className="hover:text-skyBlue">
+                <p className="text-lg">Management</p>
+              </Link>
               <Link
                 href="/contact-us"
                 className={`hover:text-skyBlue ${
@@ -301,6 +304,9 @@ export function Header() {
               }`}
             >
               <p className="text-lg">Properties</p>
+            </Link>
+            <Link href="/#testimonials" className="hover:text-skyBlue">
+              <p className="text-lg">Management</p>
             </Link>
             <Link
               href="/contact-us"

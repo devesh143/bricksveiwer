@@ -172,17 +172,19 @@ const Foressta = () => {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="suite" className="w-full">
-            <Card className="w-full p-2 md:p-10 flex flex-col-reverse jusitfy-center items-start gap-10 md:flex-row">
+            <Card className="w-full md:p-10 flex flex-col-reverse jusitfy-center items-start gap-10 md:flex-row">
               <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
                 <h1 className="w-full text-2xl text-center md:text-left md:text-4xl font-bold text-skyBlue mb-5">
                   Foressta <span className="text-black">Serviced Suite</span>
                 </h1>
-                <Table>
-                  <TableHeader>
+                <Table className="border-2">
+                  <TableHeader className="bg-green-400">
                     <TableRow className="text-sm md:text-lg font-bold">
-                      <TableHead>Tower Name</TableHead>
-                      <TableHead>Super Built Up Area</TableHead>
-                      <TableHead>Price in ₹</TableHead>
+                      <TableHead className="text-white">Tower Name</TableHead>
+                      <TableHead className="text-white">
+                        Super Built Up Area
+                      </TableHead>
+                      <TableHead className="text-white">Price in ₹</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
@@ -301,17 +303,19 @@ const Foressta = () => {
             </Card>
           </TabsContent>
           <TabsContent value="villa" className="w-full">
-            <Card className="w-full p-2 md:p-10 flex flex-col-reverse jusitfy-center items-start gap-10 md:flex-row">
+            <Card className="w-full md:p-10 flex flex-col-reverse jusitfy-center items-start gap-10 md:flex-row">
               <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
                 <h1 className="w-full text-2xl text-center md:text-left md:text-4xl font-bold text-skyBlue mb-5">
                   Foressta <span className="text-black">Serviced Villa</span>
                 </h1>
-                <Table>
-                  <TableHeader>
+                <Table className="border-2">
+                  <TableHeader className="bg-green-500">
                     <TableRow className="text-sm md:text-lg font-bold">
-                      <TableHead>Tower Name</TableHead>
-                      <TableHead>Super Built Up Area</TableHead>
-                      <TableHead>Price in ₹</TableHead>
+                      <TableHead className="text-white">Tower Name</TableHead>
+                      <TableHead className="text-white">
+                        Super Built Up Area
+                      </TableHead>
+                      <TableHead className="text-white">Price in ₹</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>

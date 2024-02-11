@@ -52,7 +52,7 @@ const BentoShowcase = () => {
             </div>
           </div>
           <div className="w-full h-1/3 flex justify-center items-center p-2">
-            <h1 className="text-3xl font-bold text-center text-white rounded-lg lg:text-4xl xl:text-5xl bg-skyBlue p-3">
+            <h1 className="w-full text-2xl h-full flex flex-col justify-center items-center font-bold text-center text-white rounded-lg lg:text-3xl xl:text-4xl bg-skyBlue p-3">
               Beautifully Designed <span className="text-black">Homes</span> for
               Your Family
             </h1>

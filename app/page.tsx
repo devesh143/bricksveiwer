@@ -14,6 +14,7 @@ const Home = () => {
       <Featured />
       <Slider />
       <BentoShowcase />
+      <Testimonials />
       <section className="w-full bg-skyBlue">
         <div className="container text-white py-10 flex flex-col-reverse justify-center items-center md:flex-row">
           <div className="w-full h-full flex justify-center items-center md:w-1/2 mt-5 md:mt-0">
@@ -31,7 +32,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Testimonials />
     </div>
   );
 };

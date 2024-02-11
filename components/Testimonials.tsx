@@ -2,114 +2,87 @@ import Image from "next/image";
 
 const Testimonials = () => {
   return (
-    <section className="w-full bg-gray-800">
+    <section id="testimonials" className="w-full bg-gray-800">
       <div className="container px-6 py-12 mx-auto">
         <div className="grid items-start gap-4 xl:grid-cols-5">
           <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
             <h2 className="text-4xl font-bold text-white">
-              Don&apos;t take our word for it, hear what our{" "}
-              <span className="text-safron uppercase font-bold">customers</span>{" "}
-              have to say
+              Property{" "}
+              <span className="text-safron uppercase font-bold">
+                Management
+              </span>{" "}
+              Services
             </h2>
             <p className="text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Property management can be a daunting task for individual property
+              owners and real estate investors. We offer a comprehensive
+              property management services that takes care of everything from
+              finding tenants to maintaining and managing the property.
             </p>
           </div>
           <div className="p-6 xl:col-span-3">
             <div className="grid gap-4 md:grid-cols-2">
               <div className="grid content-center gap-4">
                 <div className="p-6 rounded bg-white shadow-md dark:bg-gray-900">
+                  <h1 className="text-lg font-bold">Tenant Management</h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    There are risks involved in renting out property or keeping
+                    a vacant home unattended. There is a persistent worry about
+                    unruly tenants and encroachments.
                   </p>
-                  <div className="flex items-center mt-4 space-x-4">
-                    <Image
-                      src="https://source.unsplash.com/50x50/?portrait?1"
-                      alt="profile"
-                      width={50}
-                      height={50}
-                      className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500"
-                    />
-                    <div>
-                      <p className="text-lg font-semibold">Customer One</p>
-                      <p className="text-sm dark:text-gray-400">
-                        High School Teacher
-                      </p>
-                    </div>
-                  </div>
                 </div>
                 <div className="p-6 rounded bg-safron shadow-md text-white">
+                  <h1 className="text-lg font-bold">Renovation</h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    Through qualified contractors, we will help you make
+                    renovations or repairs to your property. Interiors and
+                    modular kitchens are among our services.
                   </p>
-                  <div className="flex items-center mt-4 space-x-4">
-                    <Image
-                      src="https://source.unsplash.com/50x50/?portrait?2"
-                      alt="profile"
-                      width={50}
-                      height={50}
-                      className="w-12 h-12 bg-center bg-cover rounded-full"
-                    />
-                    <div>
-                      <p className="text-lg font-semibold">Customer Two</p>
-                      <p className="text-sm dark:text-gray-400">
-                        Software Engineer
-                      </p>
-                    </div>
-                  </div>
+                </div>
+                <div className="p-6 rounded bg-white shadow-md">
+                  <h1 className="text-lg font-bold">
+                    Real Estate Buying/Selling
+                  </h1>
+                  <p>
+                    We have specialized Dealers to make it easier to purchase or
+                    sell both commercial and residential property in India.
+                  </p>
+                </div>
+                <div className="p-6 rounded bg-safron shadow-md text-white">
+                  <h1 className="text-lg font-bold">Property Monitoring</h1>
+                  <p>
+                    There are several reasons why a property owner may need to
+                    monitor their property. We provide property monitoring
+                    services for NRIs and people living abroad.
+                  </p>
                 </div>
               </div>
               <div className="grid content-center gap-4">
-                <div className="p-6 bg-skyBlue rounded shadow-md text-white">
+                <div className="p-6 bg-white rounded shadow-md">
+                  <h1 className="text-lg font-bold">Construction</h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Through qualified contractors, we will help you make
+                    renovations or repairs to your property. Interior design,
+                    modular kitchens, and wardrobes are all part of our
+                    services.
                   </p>
-                  <div className="flex items-center mt-4 space-x-4">
-                    <Image
-                      src="https://source.unsplash.com/50x50/?portrait?3"
-                      alt="profile"
-                      width={50}
-                      height={50}
-                      className="w-12 h-12 bg-center bg-cover rounded-full"
-                    />
-                    <div>
-                      <p className="text-lg font-semibold">Customer Three</p>
-                      <p className="text-sm dark:text-gray-400">
-                        Marketing Manager
-                      </p>
-                    </div>
-                  </div>
                 </div>
-                <div className="p-6 rounded bg-white shadow-md dark:bg-gray-900">
+                <div className="p-6 rounded bg-skyBlue shadow-md dark:bg-gray-900 text-white">
+                  <h1 className="text-lg font-bold">Rental Assistance</h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    We have a Team of Specialized Agents created specifically to
+                    meet the demands and provide for NRIs and people is called
+                    Rental Assistance (Property Management Services).
                   </p>
-                  <div className="flex items-center mt-4 space-x-4">
-                    <Image
-                      src="https://source.unsplash.com/50x50/?portrait?4"
-                      alt="profile"
-                      width={50}
-                      height={50}
-                      className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500"
-                    />
-                    <div>
-                      <p className="text-lg font-semibold">Customer Four</p>
-                      <p className="text-sm dark:text-gray-400">
-                        News Reporter
-                      </p>
-                    </div>
-                  </div>
+                </div>
+                <div className="p-6 bg-white rounded shadow-md">
+                  <h1 className="text-lg font-bold">Interior Design</h1>
+                  <p>
+                    We are able to meet all of your interior demands. We gladly
+                    satisfy your needs and offer a helpful and dependable
+                    service for everything from small home repairs to
+                    large-scale renovations and construction.
+                  </p>
                 </div>
               </div>
             </div>

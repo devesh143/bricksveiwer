@@ -174,7 +174,7 @@ const CityOfDreams = () => {
           <TabsContent value="twobhk" className="w-full">
             <Tabs
               defaultValue="one"
-              className="w-full container mx-auto flex flex-col justify-center items-center"
+              className="w-full flex flex-col justify-center items-center"
             >
               <TabsList className="md:h-12 bg-safron text-white">
                 <TabsTrigger className="text-md md:text-xl" value="one">
@@ -185,8 +185,11 @@ const CityOfDreams = () => {
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="one" className="w-full">
-                <Card className="w-full p-2 md:p-10 flex flex-col jusitfy-center items-start gap-10 md:flex-row">
+                <Card className="w-full md:p-10 flex flex-col jusitfy-center items-start gap-10 md:flex-row">
                   <Carousel setApi={setApi} className="w-full md:w-1/3">
+                    <div className="py-2 text-center text-sm text-muted-foreground">
+                      Image {current} of {count}
+                    </div>
                     <CarouselContent>
                       <CarouselItem key="1">
                         <Card className="p-0">
@@ -202,9 +205,6 @@ const CityOfDreams = () => {
                         </Card>
                       </CarouselItem>
                     </CarouselContent>
-                    <div className="py-2 text-center text-sm text-muted-foreground">
-                      Image {current} of {count}
-                    </div>
                     <CarouselPrevious className="absolute left-1 text-skyBlue bg-white border-skyBlue border-4" />
                     <CarouselNext className="absolute right-1 text-skyBlue bg-white border-skyBlue border-4" />
                   </Carousel>
@@ -400,8 +400,11 @@ const CityOfDreams = () => {
                 </Card>
               </TabsContent>
               <TabsContent value="two" className="w-full">
-                <Card className="w-full p-2 md:p-10 flex flex-col jusitfy-center items-start gap-10 md:flex-row-reverse">
+                <Card className="w-full md:p-10 flex flex-col jusitfy-center items-start gap-10 md:flex-row-reverse">
                   <Carousel setApi={setApi} className="w-full md:w-1/3">
+                    <div className="py-2 text-center text-sm text-muted-foreground">
+                      Image {current} of {count}
+                    </div>
                     <CarouselContent>
                       <CarouselItem key="1">
                         <Card className="p-0">
@@ -417,9 +420,6 @@ const CityOfDreams = () => {
                         </Card>
                       </CarouselItem>
                     </CarouselContent>
-                    <div className="py-2 text-center text-sm text-muted-foreground">
-                      Image {current} of {count}
-                    </div>
                     <CarouselPrevious className="absolute left-1 text-skyBlue bg-white border-skyBlue border-4" />
                     <CarouselNext className="absolute right-1 text-skyBlue bg-white border-skyBlue border-4" />
                   </Carousel>
@@ -629,7 +629,7 @@ const CityOfDreams = () => {
           <TabsContent value="threebhk" className="w-full">
             <Tabs
               defaultValue="one"
-              className="w-full container mx-auto flex flex-col justify-center items-center"
+              className="w-full flex flex-col justify-center items-center"
             >
               <TabsList className="md:h-12 bg-safron text-white">
                 <TabsTrigger className="text-md md:text-xl" value="one">
@@ -640,8 +640,11 @@ const CityOfDreams = () => {
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="one" className="w-full">
-                <Card className="w-full p-2 md:p-10 flex flex-col jusitfy-center items-start gap-10 md:flex-row">
+                <Card className="w-full md:p-10 flex flex-col jusitfy-center items-start gap-10 md:flex-row">
                   <Carousel setApi={setApi} className="w-full md:w-1/3">
+                    <div className="py-2 text-center text-sm text-muted-foreground">
+                      Image {current} of {count}
+                    </div>
                     <CarouselContent>
                       <CarouselItem key="1">
                         <Card className="p-0">
@@ -657,9 +660,6 @@ const CityOfDreams = () => {
                         </Card>
                       </CarouselItem>
                     </CarouselContent>
-                    <div className="py-2 text-center text-sm text-muted-foreground">
-                      Image {current} of {count}
-                    </div>
                     <CarouselPrevious className="absolute left-1 text-skyBlue bg-white border-skyBlue border-4" />
                     <CarouselNext className="absolute right-1 text-skyBlue bg-white border-skyBlue border-4" />
                   </Carousel>
@@ -861,8 +861,11 @@ const CityOfDreams = () => {
                 </Card>
               </TabsContent>
               <TabsContent value="two" className="w-full">
-                <Card className="w-full p-2 md:p-10 flex flex-col jusitfy-center items-start gap-10 md:flex-row-reverse">
+                <Card className="w-full md:p-10 flex flex-col jusitfy-center items-start gap-10 md:flex-row-reverse">
                   <Carousel setApi={setApi} className="w-full md:w-1/3">
+                    <div className="py-2 text-center text-sm text-muted-foreground">
+                      Image {current} of {count}
+                    </div>
                     <CarouselContent>
                       <CarouselItem key="1">
                         <Card className="p-0">
@@ -878,9 +881,6 @@ const CityOfDreams = () => {
                         </Card>
                       </CarouselItem>
                     </CarouselContent>
-                    <div className="py-2 text-center text-sm text-muted-foreground">
-                      Image {current} of {count}
-                    </div>
                     <CarouselPrevious className="absolute left-1 text-skyBlue bg-white border-skyBlue border-4" />
                     <CarouselNext className="absolute right-1 text-skyBlue bg-white border-skyBlue border-4" />
                   </Carousel>

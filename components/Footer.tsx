@@ -162,7 +162,8 @@ export function Footer() {
       </div>
       <div className="flex flex-col items-center justify-center w-full p-5 border-t bg-black text-white">
         <p className="text-sm text-center">
-          © 2024 `BricksViewer.com`. All rights reserved.
+          © 2024 BricksViewer.com | Powered by{" "}
+          <Link href="https://webarc.one">WebArc.One</Link>
         </p>
       </div>
     </footer>
