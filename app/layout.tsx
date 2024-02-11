@@ -12,9 +12,24 @@ const montserrat = Montserrat({ subsets: ["latin"], variable: "--montserrat" });
 
 export const metadata: Metadata = {
   title: "BricksViewer.com",
-  description: "Buy and Book best properties that suits your needs.",
-  keywords: "Real Estate, Properties, Buy, Rent, Sell, Book, Rent, Lease",
+  description:
+    "We provide our clients with the best properties and property management services in India. We are a one-stop shop for all your property needs. We provide a wide range of services, including buying, selling, renting, and leasing.",
+  keywords:
+    "Real Estate, Properties, Buy, Rent, Sell, Book, Rent, Lease, Bricks, BricksViewer, BricksViewer.com, Bricks Viewer",
   icons: "/favicon.jpg",
+  openGraph: {
+    title: "BricksViewer.com",
+    description:
+      "We provide our clients with the best properties and property management services in India. We are a one-stop shop for all your property needs. We provide a wide range of services, including buying, selling, renting, and leasing.",
+    images: [
+      {
+        url: "/favicon.jpg",
+        width: 800,
+        height: 600,
+        alt: "BricksViewer.com",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
