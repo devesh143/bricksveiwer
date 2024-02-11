@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "WebArc.One",
     "Bricks Viewer",
   ],
-  icons: "/favicon.jpg",
+  icons: "/favicon.png",
   applicationName: "BricksViewer.com",
   referrer: "origin-when-cross-origin",
   authors: [
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
       "We provide our clients with the best properties and property management services in India. We are a one-stop shop for all your property needs. We provide a wide range of services, including buying, selling, renting, and leasing.",
     images: [
       {
-        url: "/favicon.jpg",
+        url: "/favicon.png",
         width: 800,
         height: 800,
         alt: "BricksViewer.com",
