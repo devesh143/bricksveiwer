@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "BricksViewer.com",
   description: "Buy and Book best properties that suits your needs.",
   keywords: "Real Estate, Properties, Buy, Rent, Sell, Book, Rent, Lease",
-  icons: "/favicon.png",
+  icons: "/favicon.jpg",
 };
 
 export default function RootLayout({
