@@ -23,7 +23,7 @@ const Testimonials = () => {
           <div className="p-6 xl:col-span-3">
             <div className="grid gap-4 md:grid-cols-2">
               <div className="grid content-center gap-4">
-                <div className="p-6 rounded bg-white shadow-md dark:bg-gray-900">
+                <div className="p-6 rounded bg-white shadow-md dark:bg-gray-900 hover:scale-105 transition duration-300 ease-in-out">
                   <h1 className="text-lg font-bold">Tenant Management</h1>
                   <p>
                     There are risks involved in renting out property or keeping
@@ -31,7 +31,7 @@ const Testimonials = () => {
                     unruly tenants and encroachments.
                   </p>
                 </div>
-                <div className="p-6 rounded bg-safron shadow-md text-white">
+                <div className="p-6 rounded bg-safron shadow-md text-white hover:scale-105 transition duration-300 ease-in-out">
                   <h1 className="text-lg font-bold">Renovation</h1>
                   <p>
                     Through qualified contractors, we will help you make
@@ -39,7 +39,7 @@ const Testimonials = () => {
                     modular kitchens are among our services.
                   </p>
                 </div>
-                <div className="p-6 rounded bg-white shadow-md">
+                <div className="p-6 rounded bg-white shadow-md hover:scale-105 transition duration-300 ease-in-out">
                   <h1 className="text-lg font-bold">
                     Real Estate Buying/Selling
                   </h1>
@@ -48,7 +48,7 @@ const Testimonials = () => {
                     sell both commercial and residential property in India.
                   </p>
                 </div>
-                <div className="p-6 rounded bg-safron shadow-md text-white">
+                <div className="p-6 rounded bg-safron shadow-md text-white hover:scale-105 transition duration-300 ease-in-out">
                   <h1 className="text-lg font-bold">Property Monitoring</h1>
                   <p>
                     There are several reasons why a property owner may need to
@@ -58,7 +58,7 @@ const Testimonials = () => {
                 </div>
               </div>
               <div className="grid content-center gap-4">
-                <div className="p-6 bg-white rounded shadow-md">
+                <div className="p-6 bg-white rounded shadow-md hover:scale-105 transition duration-300 ease-in-out">
                   <h1 className="text-lg font-bold">Construction</h1>
                   <p>
                     Through qualified contractors, we will help you make
@@ -67,7 +67,7 @@ const Testimonials = () => {
                     services.
                   </p>
                 </div>
-                <div className="p-6 rounded bg-skyBlue shadow-md dark:bg-gray-900 text-white">
+                <div className="p-6 rounded bg-skyBlue shadow-md dark:bg-gray-900 text-white hover:scale-105 transition duration-300 ease-in-out">
                   <h1 className="text-lg font-bold">Rental Assistance</h1>
                   <p>
                     We have a Team of Specialized Agents created specifically to
@@ -75,7 +75,7 @@ const Testimonials = () => {
                     Rental Assistance (Property Management Services).
                   </p>
                 </div>
-                <div className="p-6 bg-white rounded shadow-md">
+                <div className="p-6 bg-white rounded shadow-md hover:scale-105 transition duration-300 ease-in-out">
                   <h1 className="text-lg font-bold">Interior Design</h1>
                   <p>
                     We are able to meet all of your interior demands. We gladly
