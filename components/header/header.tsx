@@ -151,17 +151,7 @@ export function Header() {
                 <p className="text-lg">Properties</p>
               </Link>
               <Link href="/#testimonials" className="hover:text-skyBlue">
-                <p className="text-lg">Management</p>
-              </Link>
-              <Link
-                href="/contact-us"
-                className={`hover:text-skyBlue ${
-                  pathname === "/contact-us"
-                    ? "border-b-2 text-skyBlue border-skyBlue font-bold"
-                    : ""
-                }`}
-              >
-                <p className="text-lg">Contact Us</p>
+                <p className="text-lg">Property Management</p>
               </Link>
             </div>
             <div
@@ -306,17 +296,7 @@ export function Header() {
               <p className="text-lg">Properties</p>
             </Link>
             <Link href="/#testimonials" className="hover:text-skyBlue">
-              <p className="text-lg">Management</p>
-            </Link>
-            <Link
-              href="/contact-us"
-              className={`hover:text-skyBlue ${
-                pathname === "/contact-us"
-                  ? "border-b-2 text-skyBlue border-skyBlue font-bold"
-                  : ""
-              }`}
-            >
-              <p className="text-lg">Contact Us</p>
+              <p className="text-lg">Property Management</p>
             </Link>
             <Dialog open={openTwo} onOpenChange={setOpenTwo}>
               <DialogTrigger className="text-lg font-bold text-white bg-safron baseline lg:block border-safron border-2 hover:bg-transparent hover:text-safron transition duration-500 ease-in-out rounded-md px-2 py-1">
