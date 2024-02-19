@@ -77,9 +77,11 @@ const Properties = () => {
                     </h3>
                   </div>
                   <p className="text-gray-500 w-full text-justify text-sm md:text-base">
-                    Township nestled along the{" "}
-                    <strong>Chandigarh-Ludhiana Expressway</strong> sprawling
-                    around ten acres, conjuring all elements of blissful luxury.
+                    City of Dreams is a residential project by SBP Group in{" "}
+                    <strong>Zirakpur, Chandigarh</strong> . The project offers{" "}
+                    <strong>2BHK and 3BHK apartments</strong> with perfect
+                    combination of contemporary architecture and features to
+                    provide comfortable living.
                   </p>
                 </CardContent>
                 <CardFooter className="flex flex-col items-start justify-start">
@@ -92,7 +94,7 @@ const Properties = () => {
                       View Property
                     </Button>
                     <Image
-                      src="/images/mewsgate/logo.png"
+                      src="/cityofdreams.png"
                       width={50}
                       height={50}
                       alt="logo"

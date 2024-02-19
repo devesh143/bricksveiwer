@@ -169,10 +169,11 @@ const CityOfDreams = () => {
             </h1>
             <CardDescription className="flex justify-center items-center">
               <p className="text-sm text-muted-foreground text-justify md:text-center md:text-md md:w-2/3">
-                City of Dreams is a residential project by SBP Group in
-                Zirakpur, Chandigarh. The project offers 2BHK and 3BHK
-                apartments with perfect combination of contemporary architecture
-                and features to provide comfortable living.
+                City of Dreams is a residential project by SBP Group in{" "}
+                <strong>Zirakpur, Chandigarh</strong> . The project offers{" "}
+                <strong>2BHK and 3BHK apartments</strong> with perfect
+                combination of contemporary architecture and features to provide
+                comfortable living.
               </p>
             </CardDescription>
           </CardHeader>
