@@ -207,15 +207,19 @@ const MewsGate = () => {
         <Card className="container mx-4 mt-5 p-0">
           <CardHeader className="flex flex-col justify-center items-center gap-2">
             <h1 className="text-2xl text-center md:text-4xl font-bold text-skyBlue">
-              MewsGate <span className="text-black">Property</span> Apartments
+              MewsGate <span className="text-black">Property</span>
             </h1>
             <CardDescription className="flex justify-center items-center">
               <p className="text-sm text-muted-foreground text-justify md:text-center md:text-md md:w-2/3">
-                City of Dreams is a residential project by SBP Group in{" "}
-                <strong>Zirakpur, Chandigarh</strong> . The project offers{" "}
-                <strong>2BHK and 3BHK apartments</strong> with perfect
-                combination of contemporary architecture and features to provide
-                comfortable living.
+                Mews Gate is One of the most admired address on{" "}
+                <strong>NH21, Kharar - Kurali Road</strong>. Just 5 minutes away
+                from Chandigarh border, it is surrounded by well developed
+                commercial projects and educational institutions such as
+                <strong>
+                  Chandigarh University, Rayat Bahra University, Doaba Group of
+                  Colleges, Cambridge School
+                </strong>{" "}
+                and more.
               </p>
             </CardDescription>
           </CardHeader>
@@ -224,39 +228,12 @@ const MewsGate = () => {
               id="siteplans_cityofdreams"
               className="mt-4 flex flex-col justify-center items-center"
             >
-              <h1 className="text-2xl text-center md:text-3xl font-bold text-skyBlue mb-2">
-                Site Plans
-              </h1>
-              <Carousel className="w-full md:w-2/3 md:p-0">
-                <CarouselContent>
-                  <CarouselItem key="1" className="md:basis-1/2">
-                    <Image
-                      src="/Property details/SBP property/Photo from Jatin(7).jpg"
-                      alt="bricksveiwer_sbp"
-                      width={500}
-                      height={400}
-                      className="w-full h-full rounded"
-                    />
-                  </CarouselItem>
-                  <CarouselItem key="2" className="md:basis-1/2">
-                    <Image
-                      src="/Property details/SBP property/sitePlan.jpg"
-                      alt="bricksveiwer_sbp"
-                      width={500}
-                      height={400}
-                      className="w-full h-full rounded"
-                    />
-                  </CarouselItem>
-                </CarouselContent>
-                <CarouselPrevious className="absolute left-5 md:left-2 text-safron bg-white border-safron border-4" />
-                <CarouselNext className="absolute right-5 md:right-2 text-safron bg-white border-safron border-4" />
-              </Carousel>
               <h1 className="text-xl text-center font-bold text-black flex justify-center items-center">
                 <FaMapPin />
                 Address:
               </h1>
               <p className="text-md text-skyBlue font-medium text-center md:text-md md:w-2/3">
-                City of Dreams, Zirakpur, Chandigarh, Punjab 140603
+                NH21, Kharar - Kurali Road, Punjab
               </p>
             </div>
             <div className="flex flex-col justify-center items-center mt-5">
@@ -268,82 +245,81 @@ const MewsGate = () => {
                   Gallery Image {current} of {count}
                 </div>
                 <CarouselContent>
-                  <CarouselItem key="9" className="md:basis-1/2">
+                  <CarouselItem className="md:basis-1/2" key="9">
                     <video
-                      src="/Property details/SBP property/SBP_1.mp4"
-                      className="
-              w-full h-full"
+                      src="/videos/MewsGate_3.mp4"
+                      className="w-full h-full rounded"
                       controls
                     />
                   </CarouselItem>
-                  <CarouselItem key="4" className="md:basis-1/2">
+                  <CarouselItem className="md:basis-1/2" key="5">
                     <Image
-                      src="/Property details/SBP property/Photo from Jatin(10).jpg"
-                      alt="bricksveiwer_sbp"
-                      width={500}
+                      src="/properties/mewsgate/benefit_9.jpg"
+                      alt="bricksveiwer_mewsgate"
+                      width={900}
                       height={400}
                       className="w-full h-full rounded"
                     />
                   </CarouselItem>
-                  <CarouselItem key="5" className="md:basis-1/2">
+                  <CarouselItem className="md:basis-1/2" key="1">
                     <Image
-                      src="/Property details/SBP property/Photo from Jatin(12).jpg"
-                      alt="bricksveiwer_sbp"
-                      width={500}
+                      src="/properties/mewsgate/iterior_1.jpg"
+                      alt="bricksveiwer_mewsgate"
+                      width={900}
                       height={400}
                       className="w-full h-full rounded"
                     />
                   </CarouselItem>
-                  <CarouselItem key="6" className="md:basis-1/2">
+                  <CarouselItem className="md:basis-1/2" key="7">
                     <Image
-                      src="/Property details/SBP property/Photo from Jatin(14).jpg"
-                      alt="bricksveiwer_sbp"
-                      width={500}
+                      src="/properties/mewsgate/benefit_7.jpg"
+                      alt="bricksveiwer_mewsgate"
+                      width={900}
                       height={400}
                       className="w-full h-full rounded"
                     />
                   </CarouselItem>
-                  <CarouselItem key="7" className="md:basis-1/2">
+                  <CarouselItem className="md:basis-1/2" key="2">
                     <Image
-                      src="/Property details/SBP property/Photo from Jatin(15).jpg"
-                      alt="bricksveiwer_sbp"
-                      width={500}
+                      src="/properties/mewsgate/iterior_2.jpg"
+                      alt="bricksveiwer_mewsgate"
+                      width={900}
                       height={400}
                       className="w-full h-full rounded"
                     />
                   </CarouselItem>
-                  <CarouselItem key="8" className="md:basis-1/2">
+                  <CarouselItem className="md:basis-1/2" key="6">
                     <Image
-                      src="/Property details/SBP property/Photo from Jatin(16).jpg"
-                      alt="bricksveiwer_sbp"
-                      width={500}
+                      src="/properties/mewsgate/benefit_8.jpg"
+                      alt="bricksveiwer_mewsgate"
+                      width={900}
                       height={400}
                       className="w-full h-full rounded"
                     />
                   </CarouselItem>
-                  <CarouselItem key="1" className="md:basis-1/2">
+                  <CarouselItem className="md:basis-1/2" key="3">
                     <Image
-                      src="/Property details/SBP property/Photo from Jatin(3).jpg"
-                      alt="bricksveiwer_sbp"
-                      width={500}
+                      src="/properties/mewsgate/iterior_3.jpg"
+                      alt="bricksveiwer_mewsgate"
+                      width={900}
                       height={400}
                       className="w-full h-full rounded"
                     />
                   </CarouselItem>
-                  <CarouselItem key="2" className="md:basis-1/2">
+                  <CarouselItem className="md:basis-1/2" key="8">
                     <Image
-                      src="/Property details/SBP property/Photo from Jatin(4).jpg"
-                      alt="bricksveiwer_sbp"
-                      width={500}
+                      src="/properties/mewsgate/benefit_6.jpg"
+                      alt="bricksveiwer_mewsgate"
+                      width={900}
                       height={400}
                       className="w-full h-full rounded"
                     />
                   </CarouselItem>
-                  <CarouselItem key="3" className="md:basis-1/2">
+                  <CarouselItem className="md:basis-1/2" key="4">
                     <Image
-                      src="/Property details/SBP property/Photo from Jatin(5).jpg"
-                      alt="bricksveiwer_sbp"
-                      width={500}
+                      src="/properties/mewsgate/iterior_4.jpg"
+                      alt="bricksveiwer_mewsgate"
+                      width={900}
                       height={400}
                       className="w-full h-full rounded"
                     />
@@ -1185,124 +1161,6 @@ const MewsGate = () => {
         </Card>
       </section>
       <div className="my-8 w-full flex flex-col justify-center items-center">
-        <div className="container mx-auto flex flex-col justify-center items-center">
-          <div className="py-2 text-center mb-5">
-            <h1 className="text-4xl font-bold">Property Images</h1>
-          </div>
-          <Carousel setApi={setApi} className="w-full">
-            <CarouselContent>
-              <CarouselItem className="md:basis-1/2" key="5">
-                <Card className="p-0">
-                  <CardContent className="flex items-center justify-center p-0">
-                    <Image
-                      src="/properties/mewsgate/benefit_9.jpg"
-                      alt="bricksveiwer_mewsgate"
-                      width={900}
-                      height={400}
-                      className="w-full h-full rounded"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem className="md:basis-1/2" key="1">
-                <Card className="p-0">
-                  <CardContent className="flex items-center justify-center p-0">
-                    <Image
-                      src="/properties/mewsgate/iterior_1.jpg"
-                      alt="bricksveiwer_mewsgate"
-                      width={900}
-                      height={400}
-                      className="w-full h-full rounded"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem className="md:basis-1/2" key="7">
-                <Card className="p-0">
-                  <CardContent className="flex items-center justify-center p-0">
-                    <Image
-                      src="/properties/mewsgate/benefit_7.jpg"
-                      alt="bricksveiwer_mewsgate"
-                      width={900}
-                      height={400}
-                      className="w-full h-full rounded"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem className="md:basis-1/2" key="2">
-                <Card className="p-0">
-                  <CardContent className="flex items-center justify-center p-0">
-                    <Image
-                      src="/properties/mewsgate/iterior_2.jpg"
-                      alt="bricksveiwer_mewsgate"
-                      width={900}
-                      height={400}
-                      className="w-full h-full rounded"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem className="md:basis-1/2" key="6">
-                <Card className="p-0">
-                  <CardContent className="flex items-center justify-center p-0">
-                    <Image
-                      src="/properties/mewsgate/benefit_8.jpg"
-                      alt="bricksveiwer_mewsgate"
-                      width={900}
-                      height={400}
-                      className="w-full h-full rounded"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem className="md:basis-1/2" key="3">
-                <Card className="p-0">
-                  <CardContent className="flex items-center justify-center p-0">
-                    <Image
-                      src="/properties/mewsgate/iterior_3.jpg"
-                      alt="bricksveiwer_mewsgate"
-                      width={900}
-                      height={400}
-                      className="w-full h-full rounded"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem className="md:basis-1/2" key="8">
-                <Card className="p-0">
-                  <CardContent className="flex items-center justify-center p-0">
-                    <Image
-                      src="/properties/mewsgate/benefit_6.jpg"
-                      alt="bricksveiwer_mewsgate"
-                      width={900}
-                      height={400}
-                      className="w-full h-full rounded"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem className="md:basis-1/2" key="4">
-                <Card className="p-0">
-                  <CardContent className="flex items-center justify-center p-0">
-                    <Image
-                      src="/properties/mewsgate/iterior_4.jpg"
-                      alt="bricksveiwer_mewsgate"
-                      width={900}
-                      height={400}
-                      className="w-full h-full rounded"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious className="absolute left-10 text-skyBlue bg-white border-skyBlue border-4" />
-            <CarouselNext className="absolute right-10 text-skyBlue bg-white border-skyBlue border-4" />
-          </Carousel>
-          <div className="py-2 text-center text-sm text-muted-foreground">
-            Image {current} of {count}
-          </div>
-        </div>
         <div className="w-full container flex flex-col justify-center items-center px-5 md:px-10 lg:px-20">
           <div className="w-full flex justify-between items-center gap-10 mt-10">
             <Table>
@@ -1344,46 +1202,6 @@ const MewsGate = () => {
                 ))}
               </TableBody>
             </Table>
-          </div>
-          <div className="w-full flex flex-col-reverse justify-between items-center gap-10 mt-10 md:flex-row">
-            <div className="w-full">
-              <p className="md:text-xl text-justify font-medium">
-                Mews Gate is One of the most admired address on NH21, Kharar -
-                Kurali Road. Just 5 minutes away from Chandigarh border, it is
-                surrounded by well developed commercial projects and educational
-                institutions such as Chandigarh University, Rayat Bahra
-                University, Doaba Group of Colleges, Cambridge School and more.
-              </p>
-            </div>
-            <div className="w-full">
-              <Image
-                src="/properties/mewsgate/route.jpg"
-                alt="bricksveiwer_mewsgate"
-                width={800}
-                height={300}
-                className="rounded"
-              />
-            </div>
-          </div>
-          <div className="w-full flex flex-col justify-between items-center gap-10 mt-10 md:flex-row">
-            <div className="w-full">
-              <Image
-                src="/properties/mewsgate/benefit_4.jpg"
-                alt="bricksveiwer_mewsgate"
-                width={800}
-                height={300}
-                className="rounded"
-              />
-            </div>
-            <div className="w-full">
-              <p className="md:text-xl text-justify font-medium">
-                The project offers an unprecedented lifestyle with independent
-                homes and luxurious High-Rise apartments that boasts of
-                neo-classical architecture, beside impressive shopping arcade
-                and highway front. Make Mews Gate your address and enjoy the
-                elite company of like minded people.
-              </p>
-            </div>
           </div>
         </div>
       </div>
