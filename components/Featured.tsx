@@ -69,7 +69,7 @@ const Properties = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex justify-start items-center text-xl font-bold mb-4">
+                  <div className="flex justify-start items-center text-lg md:text-xl font-bold mb-4">
                     <FaMapPin />
                     <h3 className="w-full text-justify">
                       Address:{" "}
@@ -110,11 +110,29 @@ const Properties = () => {
             >
               <Card className="bg-gray-100 h-full flex flex-col justify-between opaParent">
                 <CardHeader>
-                  <CardTitle className="text-xl sm:text-2xl font-bold mb-2 md:text-3xl lg:text-4xl">
-                    <span className="text-xl sm:text-2xl font-bold md:text-3xl lg:text-4xl text-safron">
-                      Foressta{" "}
-                    </span>
-                    Serviced Suites/Villas
+                  <CardTitle>
+                    <h1 className="text-xl sm:text-2xl font-bold mb-2 md:text-3xl lg:text-4xl">
+                      <span className="text-xl sm:text-2xl font-bold md:text-3xl lg:text-4xl text-safron">
+                        Foressta{" "}
+                      </span>
+                      Serviced Suites/Villas
+                    </h1>
+                    <CardDescription>
+                      <p className="flex flex-wrap text-sm font-medium gap-2">
+                        <span className="bg-safron text-white py-1 px-2 rounded-md">
+                          Suite
+                        </span>
+                        <span className="bg-safron text-white py-1 px-2 rounded-md">
+                          Villa
+                        </span>
+                        <span className="bg-safron text-white py-1 px-2 rounded-md">
+                          Residential
+                        </span>
+                        <span className="bg-safron text-white py-1 px-2 rounded-md">
+                          Exotic
+                        </span>
+                      </p>
+                    </CardDescription>
                   </CardTitle>
                   <div className="dContainer bg-black rounded-lg">
                     <Image
@@ -130,7 +148,17 @@ const Properties = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
+                  <div className="flex justify-start items-center text-lg md:text-xl font-bold mb-4">
+                    <FaMapPin />
+                    <h3 className="w-full text-justify">
+                      Address:{" "}
+                      <span className="text-safron">
+                        Solan, Himachal Pradesh
+                      </span>
+                    </h3>
+                  </div>
                   <p className="text-gray-500 w-full text-justify text-sm md:text-base">
+                    Located in <strong>Solan, Himachal Pradesh</strong>,
                     Foressta is a unique blend of nature and luxury. It is a
                     place where you can live life to the fullest.
                   </p>
@@ -144,13 +172,6 @@ const Properties = () => {
                     <Button className="bg-safron text-white font-bold py-1 px-2 md:py-2 md:px-4 hover:bg-transparent transform hover:-translate-y-1 hover:text-safron hover:scale-[102%] rounded-md transition duration-500 ease-in-out border-safron border-2">
                       View Property
                     </Button>
-                    <Image
-                      src="/images/mewsgate/logo.png"
-                      width={50}
-                      height={50}
-                      alt="logo"
-                      className="rounded"
-                    />
                   </div>
                 </CardFooter>
               </Card>

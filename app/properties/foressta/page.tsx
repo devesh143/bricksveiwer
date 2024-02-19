@@ -12,7 +12,12 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
-import { Card, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+} from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -21,6 +26,8 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
+
+import { FaMapPin } from "react-icons/fa";
 
 import {
   Table,
@@ -155,298 +162,293 @@ const Foressta = () => {
           </h1>
         </div>
       </section>
-      <section className="my-8 w-full flex flex-col justify-center items-center">
-        <Tabs
-          defaultValue="villa"
-          className="w-full container mx-auto flex flex-col justify-center items-center"
-        >
-          <p className="text-muted text-sm text-center md:text-md bg-skyBlue px-3 mb-2 rounded">
-            Click on the tabs to switch
-          </p>
-          <TabsList className="md:h-12 bg-safron text-white">
-            <TabsTrigger className="text-md md:text-xl" value="suite">
-              Serviced Suite
-            </TabsTrigger>
-            <TabsTrigger className="text-md md:text-xl" value="villa">
-              Serviced Villa
-            </TabsTrigger>
-          </TabsList>
-          <TabsContent value="suite" className="w-full">
-            <Card className="w-full md:p-10 flex flex-col-reverse jusitfy-center items-start gap-10 md:flex-row">
-              <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
-                <h1 className="w-full text-2xl text-center md:text-left md:text-4xl font-bold text-skyBlue mb-5">
-                  Foressta <span className="text-black">Serviced Suite</span>
-                </h1>
-                <Table className="border-2">
-                  <TableHeader className="bg-green-400">
-                    <TableRow className="text-sm md:text-lg font-bold">
-                      <TableHead className="text-white">Tower Name</TableHead>
-                      <TableHead className="text-white">
-                        Super Built Up Area
-                      </TableHead>
-                      <TableHead className="text-white">Price in ₹</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    <TableRow key="1">
-                      <TableCell>Serviced Suite</TableCell>
-                      <TableCell>1200 sq.ft.</TableCell>
-                      <TableCell>2,10,00,000</TableCell>
-                    </TableRow>
-                  </TableBody>
-                </Table>
-                <Dialog>
-                  <DialogTrigger className="text-skyBlue text-sm md:text-lg font-bold">
-                    Click to Open Construction Link Plans
-                  </DialogTrigger>
-                  <DialogContent className="h-96 overflow-auto ">
-                    <Table>
-                      <TableCaption>
-                        Expected Date Of Possession {`(EDP)`} - 31st December
-                        2027
-                      </TableCaption>
-                      <TableBody>
-                        <TableRow key="1">
-                          <TableCell>Booking Amount</TableCell>
-                          <TableCell>
-                            20% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="2">
-                          <TableCell>On start of construction</TableCell>
-                          <TableCell>
-                            10% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="3">
-                          <TableCell>On completion of foundation</TableCell>
-                          <TableCell>
-                            10% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="4">
-                          <TableCell>
-                            On completion of Basement 1 slab of block
-                          </TableCell>
-                          <TableCell>
-                            10% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="5">
-                          <TableCell>
-                            On completion of Ground Floor slab of block
-                          </TableCell>
-                          <TableCell>
-                            10% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="6">
-                          <TableCell>
-                            On completion of 4th slab of block
-                          </TableCell>
-                          <TableCell>
-                            10% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="7">
-                          <TableCell>
-                            On completion of plaster with in block
-                          </TableCell>
-                          <TableCell>
-                            10% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="8">
-                          <TableCell>
-                            On completion of flooring with in block
-                          </TableCell>
-                          <TableCell>
-                            10% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="9" className="bg-gray-100">
-                          <TableCell>
-                            At the time of offer of possession
-                          </TableCell>
-                          <TableCell>
-                            10% of BSP + Stamp Duty + IFMS + SMC + GST{" "}
-                            {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                      </TableBody>
-                    </Table>
-                  </DialogContent>
-                </Dialog>
-              </div>
-              <Carousel setApi={setApi} className="w-full md:w-1/2">
-                <div className="py-2 text-center text-sm text-muted-foreground">
-                  Image {current} of {count}
+      <section className="w-full flex flex-col justify-center items-center">
+        <Card className="container mx-4 mt-5 p-0">
+          <CardHeader className="flex flex-col justify-center items-center gap-2">
+            <h1 className="text-2xl text-center md:text-4xl font-bold text-skyBlue">
+              Foressta <span className="text-black">Serviced</span>{" "}
+              Suites/Villas
+            </h1>
+            <CardDescription className="flex justify-center items-center">
+              <p className="text-sm text-muted-foreground text-justify md:text-center md:text-md md:w-2/3">
+                Located in <strong>Solan, Himachal Pradesh</strong>, Foressta is
+                a unique blend of nature and luxury. It is a place where you can
+                live life to the fullest.
+              </p>
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="p-2">
+            <div className="flex flex-col justify-center items-center">
+              <h1 className="text-xl text-center font-bold text-black flex justify-center items-center">
+                <FaMapPin />
+                Address:
+              </h1>
+              <p className="text-md text-skyBlue font-medium text-center md:text-md md:w-2/3">
+                City of Dreams, Zirakpur, Chandigarh, Punjab 140603
+              </p>
+            </div>
+            <div
+              id="apartment_types&payment_plans"
+              className="md:p-4 mt-5 flex flex-col justify-center items-center gap-5"
+            >
+              <h1 className="text-3xl text-center font-bold text-black mb-5">
+                Apartment Types{" "}
+                <span className="text-skyBlue">& Payment Plans</span>
+              </h1>
+              <Card className="w-full pt-5 md:p-5 flex flex-col-reverse jusitfy-center items-center gap-10 md:flex-row">
+                <Carousel className="w-2/3 md:w-1/3">
+                  <CarouselContent>
+                    <CarouselItem key="1">
+                      <Image
+                        src="/properties/foressta/ssfp.jpg"
+                        alt="bricksveiwer_foressta"
+                        width={900}
+                        height={400}
+                        className="w-full h-full rounded"
+                      />
+                    </CarouselItem>
+                  </CarouselContent>
+                </Carousel>
+                <div className="w-full md:w-2/3 flex flex-col justify-center items-center">
+                  <h1 className="w-full text-2xl text-center md:text-left md:text-4xl font-bold text-skyBlue mb-5">
+                    Foressta <span className="text-black">Serviced Suite</span>
+                  </h1>
+                  <Table className="border-2 mb-5">
+                    <TableHeader className="bg-green-400">
+                      <TableRow className="text-sm md:text-lg font-bold">
+                        <TableHead className="text-white">Tower Name</TableHead>
+                        <TableHead className="text-white">
+                          Super Built Up Area
+                        </TableHead>
+                        <TableHead className="text-white">Price in ₹</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow key="1">
+                        <TableCell>Serviced Suite</TableCell>
+                        <TableCell>1200 sq.ft.</TableCell>
+                        <TableCell>2,10,00,000</TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                  <Dialog>
+                    <DialogTrigger className="text-skyBlue text-sm md:text-lg font-bold">
+                      Click to Open Construction Link Plans
+                    </DialogTrigger>
+                    <DialogContent className="h-96 overflow-auto ">
+                      <Table>
+                        <TableCaption>
+                          Expected Date Of Possession {`(EDP)`} - 31st December
+                          2027
+                        </TableCaption>
+                        <TableBody>
+                          <TableRow key="1">
+                            <TableCell>Booking Amount</TableCell>
+                            <TableCell>
+                              20% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="2">
+                            <TableCell>On start of construction</TableCell>
+                            <TableCell>
+                              10% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="3">
+                            <TableCell>On completion of foundation</TableCell>
+                            <TableCell>
+                              10% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="4">
+                            <TableCell>
+                              On completion of Basement 1 slab of block
+                            </TableCell>
+                            <TableCell>
+                              10% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="5">
+                            <TableCell>
+                              On completion of Ground Floor slab of block
+                            </TableCell>
+                            <TableCell>
+                              10% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="6">
+                            <TableCell>
+                              On completion of 4th slab of block
+                            </TableCell>
+                            <TableCell>
+                              10% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="7">
+                            <TableCell>
+                              On completion of plaster with in block
+                            </TableCell>
+                            <TableCell>
+                              10% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="8">
+                            <TableCell>
+                              On completion of flooring with in block
+                            </TableCell>
+                            <TableCell>
+                              10% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="9" className="bg-gray-100">
+                            <TableCell>
+                              At the time of offer of possession
+                            </TableCell>
+                            <TableCell>
+                              10% of BSP + Stamp Duty + IFMS + SMC + GST{" "}
+                              {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                        </TableBody>
+                      </Table>
+                    </DialogContent>
+                  </Dialog>
                 </div>
-                <CarouselContent>
-                  <CarouselItem key="1">
-                    <Card className="p-0">
-                      <CardContent className="flex items-center justify-center p-0">
-                        <Image
-                          src="/properties/foressta/ssfp.jpg"
-                          alt="bricksveiwer_mewsgate"
-                          width={900}
-                          height={400}
-                          className="w-full h-full rounded"
-                        />
-                      </CardContent>
-                    </Card>
-                  </CarouselItem>
-                </CarouselContent>
-                <CarouselPrevious className="absolute left-1 text-skyBlue bg-white border-skyBlue border-4" />
-                <CarouselNext className="absolute right-1 text-skyBlue bg-white border-skyBlue border-4" />
-              </Carousel>
-            </Card>
-          </TabsContent>
-          <TabsContent value="villa" className="w-full">
-            <Card className="w-full md:p-10 flex flex-col-reverse jusitfy-center items-start gap-10 md:flex-row">
-              <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
-                <h1 className="w-full text-2xl text-center md:text-left md:text-4xl font-bold text-skyBlue mb-5">
-                  Foressta <span className="text-black">Serviced Villa</span>
-                </h1>
-                <Table className="border-2">
-                  <TableHeader className="bg-green-500">
-                    <TableRow className="text-sm md:text-lg font-bold">
-                      <TableHead className="text-white">Tower Name</TableHead>
-                      <TableHead className="text-white">
-                        Super Built Up Area
-                      </TableHead>
-                      <TableHead className="text-white">Price in ₹</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    <TableRow key="1">
-                      <TableCell>Serviced Villa</TableCell>
-                      <TableCell>4635 sq.ft.</TableCell>
-                      <TableCell>8,11,00,000</TableCell>
-                    </TableRow>
-                  </TableBody>
-                </Table>
-                <Dialog>
-                  <DialogTrigger className="text-skyBlue text-sm md:text-lg font-bold">
-                    Click to Open Construction Link Plans
-                  </DialogTrigger>
-                  <DialogContent className="h-96 overflow-auto ">
-                    <Table>
-                      <TableCaption>
-                        Expected Date Of Possession {`(EDP)`} - 31st December
-                        2027
-                      </TableCaption>
-                      <TableBody>
-                        <TableRow key="1">
-                          <TableCell>Booking Amount</TableCell>
-                          <TableCell>
-                            20% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="2">
-                          <TableCell>On start of construction</TableCell>
-                          <TableCell>
-                            10% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="3">
-                          <TableCell>On completion of foundation</TableCell>
-                          <TableCell>
-                            10% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="4">
-                          <TableCell>
-                            On completion of Basement 1 slab of block
-                          </TableCell>
-                          <TableCell>
-                            10% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="5">
-                          <TableCell>
-                            On completion of Ground Floor slab of block
-                          </TableCell>
-                          <TableCell>
-                            10% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="6">
-                          <TableCell>
-                            On completion of 4th slab of block
-                          </TableCell>
-                          <TableCell>
-                            10% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="7">
-                          <TableCell>
-                            On completion of plaster with in block
-                          </TableCell>
-                          <TableCell>
-                            10% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="8">
-                          <TableCell>
-                            On completion of flooring with in block
-                          </TableCell>
-                          <TableCell>
-                            10% of BSP + GST {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                        <TableRow key="9" className="bg-gray-100">
-                          <TableCell>
-                            At the time of offer of possession
-                          </TableCell>
-                          <TableCell>
-                            10% of BSP + Stamp Duty + IFMS + SMC + GST{" "}
-                            {`(As applicable)`}
-                          </TableCell>
-                        </TableRow>
-                      </TableBody>
-                    </Table>
-                  </DialogContent>
-                </Dialog>
-              </div>
-              <Carousel setApi={setApi} className="w-full md:w-1/2">
-                <div className="py-2 text-center text-sm text-muted-foreground">
-                  Image {current} of {count}
+              </Card>
+              <Card className="w-full pt-5 md:p-5 flex flex-col-reverse jusitfy-center items-center gap-10 md:flex-row-reverse">
+                <Carousel className="w-2/3 md:w-1/3">
+                  <CarouselContent>
+                    <CarouselItem key="1">
+                      <Image
+                        src="/properties/foressta/svfp_1.jpg"
+                        alt="bricksveiwer_mewsgate"
+                        width={400}
+                        height={900}
+                        className="w-full h-full rounded"
+                      />
+                    </CarouselItem>
+                    <CarouselItem key="2">
+                      <Image
+                        src="/properties/foressta/svfp_2.jpg"
+                        alt="bricksveiwer_mewsgate"
+                        width={400}
+                        height={900}
+                        className="w-full h-full rounded"
+                      />
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious className="absolute left-1 text-skyBlue bg-white border-skyBlue border-4" />
+                  <CarouselNext className="absolute right-1 text-skyBlue bg-white border-skyBlue border-4" />
+                </Carousel>
+                <div className="w-full md:w-2/3 flex flex-col justify-center items-center">
+                  <h1 className="w-full text-2xl text-center md:text-left md:text-4xl font-bold text-skyBlue mb-5">
+                    Foressta <span className="text-black">Serviced Villa</span>
+                  </h1>
+                  <Table className="border-2 mb-5">
+                    <TableHeader className="bg-green-500">
+                      <TableRow className="text-sm md:text-lg font-bold">
+                        <TableHead className="text-white">Tower Name</TableHead>
+                        <TableHead className="text-white">
+                          Super Built Up Area
+                        </TableHead>
+                        <TableHead className="text-white">Price in ₹</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow key="1">
+                        <TableCell>Serviced Villa</TableCell>
+                        <TableCell>4635 sq.ft.</TableCell>
+                        <TableCell>8,11,00,000</TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                  <Dialog>
+                    <DialogTrigger className="text-skyBlue text-sm md:text-lg font-bold">
+                      Click to Open Construction Link Plans
+                    </DialogTrigger>
+                    <DialogContent className="h-96 overflow-auto ">
+                      <Table>
+                        <TableCaption>
+                          Expected Date Of Possession {`(EDP)`} - 31st December
+                          2027
+                        </TableCaption>
+                        <TableBody>
+                          <TableRow key="1">
+                            <TableCell>Booking Amount</TableCell>
+                            <TableCell>
+                              20% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="2">
+                            <TableCell>On start of construction</TableCell>
+                            <TableCell>
+                              10% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="3">
+                            <TableCell>On completion of foundation</TableCell>
+                            <TableCell>
+                              10% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="4">
+                            <TableCell>
+                              On completion of Basement 1 slab of block
+                            </TableCell>
+                            <TableCell>
+                              10% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="5">
+                            <TableCell>
+                              On completion of Ground Floor slab of block
+                            </TableCell>
+                            <TableCell>
+                              10% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="6">
+                            <TableCell>
+                              On completion of 4th slab of block
+                            </TableCell>
+                            <TableCell>
+                              10% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="7">
+                            <TableCell>
+                              On completion of plaster with in block
+                            </TableCell>
+                            <TableCell>
+                              10% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="8">
+                            <TableCell>
+                              On completion of flooring with in block
+                            </TableCell>
+                            <TableCell>
+                              10% of BSP + GST {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                          <TableRow key="9" className="bg-gray-100">
+                            <TableCell>
+                              At the time of offer of possession
+                            </TableCell>
+                            <TableCell>
+                              10% of BSP + Stamp Duty + IFMS + SMC + GST{" "}
+                              {`(As applicable)`}
+                            </TableCell>
+                          </TableRow>
+                        </TableBody>
+                      </Table>
+                    </DialogContent>
+                  </Dialog>
                 </div>
-                <CarouselContent>
-                  <CarouselItem key="1">
-                    <Card className="p-0">
-                      <CardContent className="flex items-center justify-center p-0">
-                        <Image
-                          src="/properties/foressta/svfp_1.jpg"
-                          alt="bricksveiwer_mewsgate"
-                          width={900}
-                          height={400}
-                          className="w-full h-full rounded"
-                        />
-                      </CardContent>
-                    </Card>
-                  </CarouselItem>
-                  <CarouselItem key="2">
-                    <Card className="p-0">
-                      <CardContent className="flex items-center justify-center p-0">
-                        <Image
-                          src="/properties/foressta/svfp_2.jpg"
-                          alt="bricksveiwer_mewsgate"
-                          width={900}
-                          height={400}
-                          className="w-full h-full rounded"
-                        />
-                      </CardContent>
-                    </Card>
-                  </CarouselItem>
-                </CarouselContent>
-                <CarouselPrevious className="absolute left-1 text-skyBlue bg-white border-skyBlue border-4" />
-                <CarouselNext className="absolute right-1 text-skyBlue bg-white border-skyBlue border-4" />
-              </Carousel>
-            </Card>
-          </TabsContent>
-        </Tabs>
+              </Card>
+            </div>
+          </CardContent>
+        </Card>
       </section>
       <section className="w-full bg-skyBlue mt-8">
         <div className="container text-white py-10 flex flex-col-reverse justify-center items-center md:flex-row">

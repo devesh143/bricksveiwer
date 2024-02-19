@@ -2,7 +2,6 @@ import Hero from "@/components/Hero";
 import HeroNext from "@/components/HeroNext";
 import Featured from "@/components/Featured";
 import { Slider } from "@/components/Slider";
-// import BentoShowcase from "@/components/BentoShowcase";
 import { ContactForm } from "@/components/Form";
 import Testimonials from "@/components/Testimonials";
 
@@ -13,7 +12,6 @@ const Home = () => {
       <HeroNext />
       <Featured />
       <Slider />
-      {/* <BentoShowcase /> */}
       <Testimonials />
       <section className="w-full bg-skyBlue">
         <div className="container text-white py-10 flex flex-col-reverse justify-center items-center md:flex-row">
