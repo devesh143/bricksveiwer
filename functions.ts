@@ -180,3 +180,17 @@ export async function deleteRecord(id: string) {
     };
   }
 }
+
+export async function adminLogin(name: string, password: string) {
+  if (name === "admin" && password === "admin") {
+    return {
+      status: 200,
+      message: "Login successful",
+    };
+  } else {
+    return {
+      status: 400,
+      message: "Invalid credentials",
+    };
+  }
+}

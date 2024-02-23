@@ -14,45 +14,32 @@ import { Button } from "@/components/ui/button";
 
 const cards = [
   {
-    title: "Card 1",
-    content: "Content 1",
-    image: "/images/gateway/gateway.png",
+    title: "Lounge Room",
+    content: "",
+    image: "/images/interior/INTERIOR (1).jpg",
   },
   {
-    title: "Card 2",
-    content: "Content 2",
-    image: "/images/mewsgate/mewsgate.png",
+    title: "Guest Room",
+    content: "",
+    image: "/images/interior/INTERIOR (2).jpg",
   },
   {
-    title: "Card 3",
-    content: "Content 3",
-    image: "/images/gateway/gateway.png",
-  },
-  {
-    title: "Card 4",
-    content: "Content 4",
-    image: "/images/mewsgate/mewsgate.png",
-  },
-  {
-    title: "Card 5",
-    content: "Content 5",
-    image: "/images/gateway/gateway.png",
+    title: "Bed Room",
+    content: "",
+    image: "/images/interior/INTERIOR (3).jpg",
   },
 ];
 
 export function Slider() {
   return (
-    <div className="w-full mt-20 bg-black py-20">
+    <div className="w-full mt-20 bg-black p-5 " id="interior">
       <div className="container flex flex-col justify-center items-center md:flex-row">
         <div className="w-full flex justify-center items-center md:w-1/2">
           <Carousel className="w-full">
             <CarouselContent className="-ml-1">
               {cards.map((card, index) => (
-                <CarouselItem
-                  key={index}
-                  className="pl-4 basis-1/2 lg:basis-1/3"
-                >
-                  <Card className="w-full h-full p-1 h-[200px] sm:h-[225px] md:h-[250px]">
+                <CarouselItem key={index} className="pl-4 md:basis-1/2">
+                  <Card className="w-full p-1 h-[200px] sm:h-[225px] md:h-[250px]">
                     <CardHeader className="bg-black w-full h-full p-2 relative">
                       <Image
                         src={card.image}
@@ -79,21 +66,22 @@ export function Slider() {
         </div>
         <div className="w-full flex flex-col justify-center items-start sm:p-5 md:p-10 lg:p-16 md:w-1/2">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-left sm:text-center md:text-left mt-5 md:mt-0 px-2 md:px-0">
-            Homes that are built on{" "}
+            Interior{" "}
             <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-safron">
-              Dreams
+              Design Services
             </span>
           </h1>
           <p
             className="text-sm sm:text-base md:text-lg
            lg:text-xl text-white text-justify px-2 md:px-0"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            euismod bibendum laoreet.
+            We provide interior design services for residential and commercial
+            spaces. Our services include space planning, furniture and
+            accessories selection, color consultation, and more.
           </p>
-          <Button className="mt-5 bg-safron border-safron border-2 text-white text-lg font-medium hover:text-safron hover:bg-white mx-2 sm:mx-0">
+          {/* <Button className="mt-5 bg-safron border-safron border-2 text-white text-lg font-medium hover:text-safron hover:bg-white mx-2 sm:mx-0">
             Learn More
-          </Button>
+          </Button> */}
         </div>
       </div>
     </div>

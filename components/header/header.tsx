@@ -153,6 +153,9 @@ export function Header() {
               <Link href="/#testimonials" className="hover:text-skyBlue">
                 <p className="text-lg">Property Management</p>
               </Link>
+              <Link href="/#interior" className="hover:text-skyBlue">
+                <p className="text-lg">Interior Design</p>
+              </Link>
             </div>
             <div
               className={`flex items-center justify-center gap-4 pl-2 ${
@@ -297,6 +300,9 @@ export function Header() {
             </Link>
             <Link href="/#testimonials" className="hover:text-skyBlue">
               <p className="text-lg">Property Management</p>
+            </Link>
+            <Link href="/#interior" className="hover:text-skyBlue">
+              <p className="text-lg">Interior Design</p>
             </Link>
             <Dialog open={openTwo} onOpenChange={setOpenTwo}>
               <DialogTrigger className="text-lg font-bold text-white bg-safron baseline lg:block border-safron border-2 hover:bg-transparent hover:text-safron transition duration-500 ease-in-out rounded-md px-2 py-1">

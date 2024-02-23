@@ -91,6 +91,29 @@ export default function Hero() {
             </CardContent>
           </Card>
         </CarouselItem>
+        <CarouselItem key="3">
+          <Card>
+            <CardContent className="flex h-dvh items-start justify-center">
+              <Image
+                src="/images/interior/INTERIOR (1).jpg"
+                alt="Picture of the author"
+                width={1000}
+                height={500}
+                className="w-full h-full object-cover absolute z-0"
+              />
+              <div className="w-full h-full z-10 flex flex-col items-end justify-end pb-32 md:pr-20 lg:pr-16 gap-2">
+                <div className="bg-black bg-opacity-70 p-5 m-5 md:m-0 md:p-10 rounded-lg flex flex-col-reverse items-end justify-end gap-2">
+                  <p className="text-white text-lg font-bold rounded lg:text-3xl">
+                    We provide the best in class interior design services.
+                  </p>
+                  <h1 className="text-green-400 text-4xl font-bold rounded lg:text-6xl">
+                    Premium Interiors
+                  </h1>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </CarouselItem>
         <CarouselItem key="2">
           <Card>
             <CardContent className="flex h-dvh items-start justify-center">

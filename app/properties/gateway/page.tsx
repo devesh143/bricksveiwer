@@ -12,7 +12,12 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
-import { Card, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+} from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -21,6 +26,8 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
+
+import { FaMapPin } from "react-icons/fa";
 
 import {
   Table,
@@ -31,6 +38,8 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
@@ -58,18 +67,10 @@ const formSchema = z.object({
     .min(10, { message: "Phone Number is too short" })
     .max(11, { message: "Phone Number is too long" }),
   message: z.string(),
-  formname: z.literal("GateWay Form"),
+  formname: z.literal("Gateway Form"),
 });
 
-const apartments = [
-  {
-    id: 1,
-    type: "3 BHK",
-    floorplan: "/properties/gateway/3bhkFP.jpg",
-  },
-];
-
-const GateWay = () => {
+const Gateway = () => {
   const [phone, setPhone] = useState("");
 
   const [api, setApi] = React.useState<CarouselApi>();
@@ -81,7 +82,7 @@ const GateWay = () => {
     if (phn) {
       setPhone(phn);
     } else {
-      redirect("/phone?redirect=/properties/gateway");
+      redirect("/phone?redirect=/properties/Gateway");
     }
 
     if (!api) {
@@ -104,7 +105,7 @@ const GateWay = () => {
       name: "",
       phone: phone,
       message: "",
-      formname: "GateWay Form",
+      formname: "Gateway Form",
     },
   });
 
@@ -157,102 +158,113 @@ const GateWay = () => {
             >
               Properties
             </Link>{" "}
-            / <span className="text-black"> GateWay</span>
+            / <span className="text-black"> Gateway</span>
           </h1>
         </div>
       </section>
-      <div className="my-8 w-full flex flex-col justify-center items-center">
-        <div className="container mx-auto flex flex-col justify-center items-center">
-          <div className="py-2 text-center mb-5">
-            <h1 className="text-4xl font-bold">Property Images</h1>
-          </div>
-          <Carousel setApi={setApi} className="w-full">
-            <CarouselContent>
-              <CarouselItem className="md:basis-1/2" key="1">
-                <Card className="p-0">
-                  <CardContent className="flex items-center justify-center p-0">
+      <section className="w-full flex flex-col justify-center items-center">
+        <Card className="container mx-4 mt-5 p-0">
+          <CardHeader className="flex flex-col justify-center items-center gap-2">
+            <h1 className="text-2xl text-center md:text-4xl font-bold text-skyBlue">
+              Gateway <span className="text-black">Premium</span> Apartments
+            </h1>
+            <CardDescription className="flex justify-center items-center">
+              <p className="text-sm text-muted-foreground text-justify md:text-center md:text-md md:w-2/3">
+                Welcome to <strong>THE GATEWAY</strong>, a township nestled
+                along the
+                <strong> Chandigarh-Ludhiana Expressway</strong> sprawling
+                around ten acres is eager to accommodate your cherished dreams.
+                Conjuring all elements of blissful luxury, The Gateway lives up
+                to all your expectations. A close proximity to major arterials
+                and key-points of the region keep you well-connected to the
+                outerworld without compromising the tranquil environment in the
+                premises. The well-crafted structures reflect the optimum use of
+                sun and wind elements revealing architectural excellence. The
+                contemporary style of French architect Le Corbusier inspires the
+                functional blend given to concrete and bricks. This
+                self-sufficient cosmopolitan township is offering{" "}
+                <strong>3 BHK Luxury Floors, 3 & 4 BHK</strong> Luxury Villas
+                and trendy Commercial Bayshops.
+              </p>
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="p-2">
+            <div className="flex flex-col justify-center items-center">
+              <h1 className="text-2xl text-center md:text-3xl font-bold text-skyBlue mb-2">
+                Site Plans
+              </h1>
+              <Carousel className="w-full md:w-2/3 md:p-0">
+                <CarouselContent>
+                  <CarouselItem key="1">
                     <Image
-                      src="/properties/gateway/gateway_1.jpg"
-                      alt="bricksveiwer_GateWay"
-                      width={900}
+                      src="/properties/gateway/The Gateway Site Plan.png"
+                      alt="bricksveiwer_sbp"
+                      width={500}
                       height={400}
                       className="w-full h-full rounded"
                     />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem className="md:basis-1/2" key="2">
-                <Card className="p-0">
-                  <CardContent className="flex items-center justify-center p-0">
-                    <Image
-                      src="/properties/gateway/gateway_2.jpg"
-                      alt="bricksveiwer_GateWay"
-                      width={900}
-                      height={400}
-                      className="w-full h-full rounded"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem className="md:basis-1/2" key="3">
-                <Card className="p-0">
-                  <CardContent className="flex items-center justify-center p-0">
-                    <Image
-                      src="/properties/gateway/gateway_3.jpg"
-                      alt="bricksveiwer_GateWay"
-                      width={900}
-                      height={400}
-                      className="w-full h-full rounded"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious className="absolute left-10 text-skyBlue bg-white border-skyBlue border-4" />
-            <CarouselNext className="absolute right-10 text-skyBlue bg-white border-skyBlue border-4" />
-          </Carousel>
-          <div className="py-2 text-center text-sm text-muted-foreground">
-            Image {current} of {count}
-          </div>
-        </div>
-        <div className="w-full container flex flex-col justify-center items-start px-5 md:px-10 lg:px-20">
-          <div className="w-full md:w-1/2 flex justify-between items-center gap-10 mt-10">
-            <Table>
-              <TableCaption>Available Units in Gateway.</TableCaption>
-              <TableHeader>
-                <TableRow className="text-lg font-bold">
-                  <TableHead>Apartment Type</TableHead>
-                  <TableHead className="text-right">Floor Plan</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {apartments.map((apartment) => (
-                  <TableRow key={apartment.id}>
-                    <TableCell className="font-bold">
-                      {apartment.type}
-                    </TableCell>
-                    <TableCell className="text-right">
-                      <Dialog>
-                        <DialogTrigger asChild>
-                          <Button className="">Click to View</Button>
-                        </DialogTrigger>
-                        <DialogContent className="min-w-[1000px]">
-                          <Image
-                            src={apartment.floorplan}
-                            alt="floorplan"
-                            width={1000}
-                            height={800}
-                          />
-                        </DialogContent>
-                      </Dialog>
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
-        </div>
-      </div>
+                  </CarouselItem>
+                </CarouselContent>
+              </Carousel>
+              <h1 className="text-xl text-center font-bold text-black flex justify-center items-center">
+                <FaMapPin />
+                Address:
+              </h1>
+              <p className="text-md text-skyBlue font-medium text-center md:text-md md:w-2/3">
+                Chandigarh-Ludhiana Expressway, Khamano, Punjab 141801
+              </p>
+            </div>
+            <div
+              id="apartment_types&payment_plans"
+              className="md:p-4 mt-5 flex flex-col justify-center items-center gap-5"
+            >
+              <h1 className="text-3xl text-center font-bold text-black mb-5">
+                Apartment Types{" "}
+                <span className="text-skyBlue">& Payment Plans</span>
+              </h1>
+              <Card className="w-full pt-5 md:p-5 flex flex-col-reverse jusitfy-center items-center gap-10 md:flex-row">
+                <Carousel className="w-2/3 md:w-1/3">
+                  <CarouselContent>
+                    <CarouselItem key="1">
+                      <Image
+                        src="/properties/gateway/3bhkFP.jpg"
+                        alt="bricksveiwer_Gateway"
+                        width={900}
+                        height={400}
+                        className="w-full h-full rounded"
+                      />
+                    </CarouselItem>
+                  </CarouselContent>
+                </Carousel>
+                <div className="w-full md:w-2/3 flex flex-col justify-center items-center">
+                  <h1 className="w-full text-2xl text-center md:text-left md:text-4xl font-bold text-skyBlue mb-5">
+                    Gateway 3BHK{" "}
+                    <span className="text-black">Serviced Suite</span>
+                  </h1>
+                  <Table className="border-2 mb-5">
+                    <TableHeader className="bg-green-400">
+                      <TableRow className="text-sm md:text-lg font-bold">
+                        <TableHead className="text-white">Tower Name</TableHead>
+                        <TableHead className="text-white">
+                          Super Built Up Area
+                        </TableHead>
+                        <TableHead className="text-white">Price in ₹</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow key="1">
+                        <TableCell>Serviced Suite</TableCell>
+                        <TableCell>1200 sq.ft.</TableCell>
+                        <TableCell>2,10,00,000</TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                </div>
+              </Card>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
       <section className="w-full bg-skyBlue mt-8">
         <div className="container text-white py-10 flex flex-col-reverse justify-center items-center md:flex-row">
           <div className="w-full h-full flex justify-center items-center md:w-1/2 mt-5 md:mt-0">
@@ -305,7 +317,7 @@ const GateWay = () => {
                         id="message"
                         placeholder="Your Message"
                         value={`Hi,
-I'm interested in 'GateWay'
+I'm interested in 'Gateway'
 Please, get in touch with me.`}
                         className="text-skyBlue font-bold text-md"
                       />
@@ -338,4 +350,4 @@ Please, get in touch with me.`}
   );
 };
 
-export default GateWay;
+export default Gateway;

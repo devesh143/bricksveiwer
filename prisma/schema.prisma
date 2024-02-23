@@ -3,8 +3,8 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("POSTGRES_PRISMA_URL")
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL")
   directUrl = env("POSTGRES_URL_NON_POOLING")
 }
 
@@ -16,13 +16,13 @@ model mails {
 }
 
 model bricksviewer {
-  id       String   @unique @id @db.Uuid
-  name     String?  @db.VarChar(255)
-  phone    String?  @db.VarChar(20)
-  message  String?
+  id      String   @id @unique @db.Uuid
+  name    String?  @db.VarChar(255)
+  message String?
   form    String?  @db.VarChar(255)
+  phone   String?  @db.VarChar(20)
   created DateTime @default(now()) @db.Timestamp(6)
-  }
+}
 
 model rotary {
   id       String   @id @db.Uuid
@@ -40,4 +40,5 @@ model rotary {
   joining  String?  @db.VarChar(50)
   password String?  @db.VarChar(255)
   uid      String?  @db.VarChar(255)
+  willpay  Boolean?
 }

@@ -5,7 +5,7 @@ const Testimonials = () => {
     <section id="testimonials" className="w-full bg-gray-800">
       <div className="container px-6 py-12 mx-auto">
         <div className="grid items-start gap-4 xl:grid-cols-5">
-          <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
+          <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left flex flex-col justify-center items-center">
             <h2 className="text-4xl font-bold text-white">
               Property{" "}
               <span className="text-safron uppercase font-bold">
@@ -19,6 +19,15 @@ const Testimonials = () => {
               property management services that takes care of everything from
               finding tenants to maintaining and managing the property.
             </p>
+            <br className="hidden xl:block" />
+            <br className="hidden xl:block" />
+            <Image
+              src="/images/property-management.png"
+              alt="Property Management Services"
+              width={500}
+              height={300}
+              className="mt-10 rounded-lg hidden xl:flex shadow-lg"
+            />
           </div>
           <div className="p-6 xl:col-span-3">
             <div className="grid gap-4 md:grid-cols-2">
