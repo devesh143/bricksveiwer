@@ -210,11 +210,10 @@ const CKhomes = () => {
               </Carousel>
               <h1 className="text-xl text-center font-bold text-black flex justify-center items-center">
                 <FaMapPin />
-                Site Office:
+                Address:
               </h1>
               <p className="text-md text-skyBlue font-medium text-center md:text-md md:w-2/3">
-                City Center Anal, Office No.5, Sector 115, Kharar, Landran,
-                India, Punjab region
+                Kharar - Landran Road, Mohali, Punjab
               </p>
             </div>
             <div

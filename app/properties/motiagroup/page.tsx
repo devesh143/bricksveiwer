@@ -157,7 +157,7 @@ const MotiaGroup = () => {
             >
               Properties
             </Link>{" "}
-            / <span className="text-black"> Royal Homes</span>
+            / <span className="text-black"> Motia Group</span>
           </h1>
         </div>
       </section>
@@ -165,7 +165,7 @@ const MotiaGroup = () => {
         <Card className="container mx-4 mt-5 p-0 mb-5">
           <CardHeader className="flex flex-col justify-center items-center gap-2">
             <h1 className="text-2xl text-center md:text-4xl font-bold text-skyBlue">
-              Royal <span className="text-black">Homes</span> (by Motia Group)
+              Motia <span className="text-black">Group</span>
             </h1>
             <CardDescription className="flex justify-center items-center">
               <p className="text-sm text-muted-foreground text-justify md:text-center md:text-md md:w-2/3">

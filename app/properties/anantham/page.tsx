@@ -282,7 +282,7 @@ const Anantham = () => {
                     </DialogTrigger>
                     <DialogContent className="h-96 overflow-auto ">
                       <Image
-                        src="/properties/anantham/price list.jpg"
+                        src="/properties/anantham/Price list.jpg"
                         alt="bricksveiwer_mewsgate"
                         width={500}
                         height={900}
