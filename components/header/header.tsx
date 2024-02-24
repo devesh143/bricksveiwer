@@ -48,7 +48,7 @@ export function Header() {
   const { toast } = useToast();
 
   const [phone, setPhone] = useState("");
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [openTwo, setOpenTwo] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -163,10 +163,10 @@ export function Header() {
               } border-l-2`}
             >
               <Link
-                href="tel:+91-7055455847"
+                href="tel:+91-9779660624"
                 className="hidden font-bold lg:block hover:text-skyBlue"
               >
-                <p className="m-2 mx-3 text-md">+91-7055455847</p>
+                <p className="m-2 mx-3 text-md">+91-9779660624</p>
               </Link>
               <Dialog open={open} onOpenChange={setOpen}>
                 <DialogTrigger className="hidden text-lg font-bold text-white bg-safron baseline lg:block border-safron border-2 hover:bg-transparent hover:text-safron transition duration-500 ease-in-out rounded-md px-2 py-1">

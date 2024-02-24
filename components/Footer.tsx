@@ -67,17 +67,28 @@ export function Footer() {
           <p className="text-sm text-center lg:text-left">
             Your one-stop destination for your Dream Home.
           </p>
+          <br />
+          <p className="text-sm text-center lg:text-left">
+            <Link
+              href="https://www.google.com/maps/place/Ansal+City+Centre/@30.7162768,76.6519137,18z/data=!4m6!3m5!1s0x390fefdd6662bf53:0x8aa11ea89b456508!8m2!3d30.7163664!4d76.653183!16s%2Fg%2F11gn25zsqq?entry=ttu"
+              target="_blank"
+              className="font-bold mt-5 text-5sm hover:text-skyBlue"
+            >
+              City Center Anal, Office No.5, Sector 115, Kharar, Landran Road,
+              Mohali, Punjab, India
+            </Link>
+          </p>
           <Link
-            href="mailto: ask@ask@bricksviewer.com"
+            href="mailto: askbricksviewer@gmail.com"
             className="font-bold mt-5 text-5sm hover:text-skyBlue"
           >
-            ask@bricksviewer.com
+            askbricksviewer@gmail.com
           </Link>
           <Link
-            href="tel: +91 7055455847"
+            href="tel: +91 9779660624"
             className="font-bold text-sm hover:text-skyBlue"
           >
-            +91 7055455847
+            +91 9779660624
           </Link>
         </div>
         <div className="flex flex-col items-center justify-center w-80 lg:w-1/4 lg:items-end">

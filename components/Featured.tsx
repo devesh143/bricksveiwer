@@ -221,14 +221,14 @@ const Properties = () => {
                     <h3 className="w-full text-justify">
                       Address:{" "}
                       <span className="text-safron">
-                        Chandigarh-Ludhiana Expressway
+                        Chandigarh-Ludhiana Highway, NH-95, Kharar, S.A.S Nagar,
+                        Punjab
                       </span>
                     </h3>
                   </div>
                   <p className="text-gray-500 w-full text-justify text-sm md:text-base">
                     Township nestled along the{" "}
-                    <strong>Chandigarh-Ludhiana Expressway</strong> sprawling
-                    around ten acres, conjuring all elements of blissful luxury.
+                    <strong>Chandigarh-Ludhiana Expressway</strong>.
                   </p>
                 </CardContent>
                 <CardFooter className="flex flex-col items-start justify-start">
@@ -504,7 +504,7 @@ const Properties = () => {
                   </CardTitle>
                   <div className="dContainer bg-black rounded-lg">
                     <Image
-                      src="/images/gateway/gateway.png"
+                      src="/properties/gatewayc/image.jpg"
                       width={600}
                       height={300}
                       alt="featured"
@@ -521,14 +521,16 @@ const Properties = () => {
                     <h3 className="w-full text-justify">
                       Address:{" "}
                       <span className="text-safron">
-                        Chandigarh-Ludhiana Expressway
+                        Chandigarh-Ludhiana Highway, NH-95, Kharar, S.A.S Nagar,
+                        Punjab
                       </span>
                     </h3>
                   </div>
                   <p className="text-gray-500 w-full text-justify text-sm md:text-base">
-                    Township nestled along the{" "}
-                    <strong>Chandigarh-Ludhiana Expressway</strong> sprawling
-                    around ten acres, conjuring all elements of blissful luxury.
+                    The bustling commercial corner in{" "}
+                    <strong>The Gateway</strong> premises is a boon for the
+                    residents and businessmen alike. The Gateway offers a wide
+                    range of commercial spaces to suit every need.
                   </p>
                 </CardContent>
                 <CardFooter className="flex flex-col items-start justify-start">
@@ -555,17 +557,17 @@ const Properties = () => {
               </Card>
             </Link>
             <Link
-              href="/properties/mewsgate"
+              href="/properties/motiagroup"
               className="w-full flex flex-col items-center border-2 border-gray-200 rounded-lg hover:border-black transition duration-500 ease-in-out lg:w-1/2"
             >
               <Card className="bg-gray-100 h-full flex flex-col justify-between opaParent">
                 <CardHeader>
                   <CardTitle>
                     <h1 className="text-xl sm:text-2xl font-bold mb-2 md:text-3xl lg:text-4xl">
-                      Mews Gate{" "}
+                      Motia Group:{" "}
                       <span className="text-xl sm:text-2xl font-bold md:text-3xl lg:text-4xl text-skyBlue">
                         {" "}
-                        Property
+                        Royal Homes
                       </span>
                     </h1>
                     <CardDescription>
@@ -574,20 +576,17 @@ const Properties = () => {
                           2BHK
                         </span>
                         <span className="bg-skyBlue text-white py-1 px-2 rounded-md">
-                          3BHK
-                        </span>
-                        <span className="bg-skyBlue text-white py-1 px-2 rounded-md">
-                          4BHK
-                        </span>
-                        <span className="bg-skyBlue text-white py-1 px-2 rounded-md">
                           Residential
+                        </span>
+                        <span className="bg-skyBlue text-white py-1 px-2 rounded-md">
+                          Luxury
                         </span>
                       </p>
                     </CardDescription>
                   </CardTitle>
                   <div className="dContainer bg-black rounded-lg">
                     <Image
-                      src="/images/mewsgate/mewsgate.png"
+                      src="/properties/motiagroup/image.jpg"
                       width={600}
                       height={300}
                       alt="featured"
@@ -604,15 +603,16 @@ const Properties = () => {
                     <h3 className="w-full text-justify">
                       Address:{" "}
                       <span className="text-skyBlue">
-                        NH21, Kharar - Kurali Road
+                        Sector-116 (Adjoining Kharar-Landran Road), Greater
+                        Mohali, Punjab
                       </span>
                     </h3>
                   </div>
                   <p className="text-gray-500 w-full text-justify text-sm md:text-base">
-                    Mews Gate is One of the most admired address on{" "}
-                    <strong>NH21, Kharar - Kurali Road</strong>. It is
-                    surrounded by well developed commercial projects and
-                    educational institutions.
+                    Royal Homes is a well planned township with a team of
+                    professional architects and designers. The project is
+                    designed to provide the best of amenities and facilities to
+                    its residents.
                   </p>
                 </CardContent>
                 <CardFooter className="flex flex-col items-start justify-start">
@@ -620,7 +620,7 @@ const Properties = () => {
                     Starting at
                     <span className="font-bold text-skyBlue">
                       {" "}
-                      ₹ 70.95 Lacs
+                      ₹ 35.90 Lacs
                     </span>
                   </h2>
                   <div className="w-full flex justify-between items-end gap-10 mt-4 sm:mt-2">

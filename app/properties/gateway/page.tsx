@@ -144,7 +144,7 @@ const Gateway = () => {
     <div className="w-full h-full">
       <section className="w-full bg-skyBlue">
         <div className="container mx-auto flex justify-center items-center py-8">
-          <h1 className="text-xl sm:text-2xl md:text-3xl text-4xl text-white font-white font-bold">
+          <h1 className="sm:text-2xl md:text-3xl text-4xl text-white font-white font-bold">
             <Link
               href="/"
               className="border-white border-b-2 hover:text-black hover:border-black"
@@ -211,7 +211,7 @@ const Gateway = () => {
                 Address:
               </h1>
               <p className="text-md text-skyBlue font-medium text-center md:text-md md:w-2/3">
-                Chandigarh-Ludhiana Expressway, Khamano, Punjab 141801
+                Chandigarh-Ludhiana Highway, NH-95, Kharar, S.A.S Nagar, Punjab
               </p>
             </div>
             <div
