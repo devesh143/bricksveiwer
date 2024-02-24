@@ -447,7 +447,8 @@ const Properties = () => {
                     <h3 className="w-full text-justify">
                       Site Office:{" "}
                       <span className="text-safron">
-                        Landran- Kharar Highway, Sector 115, Mohali
+                        City Center Anal, Office No.5, Sector 115, Kharar,
+                        Landran, India, Punjab region
                       </span>
                     </h3>
                   </div>

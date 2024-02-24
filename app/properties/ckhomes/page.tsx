@@ -213,7 +213,8 @@ const CKhomes = () => {
                 Site Office:
               </h1>
               <p className="text-md text-skyBlue font-medium text-center md:text-md md:w-2/3">
-                Landran- Kharar Highway, Sector 115, Mohali
+                City Center Anal, Office No.5, Sector 115, Kharar, Landran,
+                India, Punjab region
               </p>
             </div>
             <div
