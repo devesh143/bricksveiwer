@@ -165,7 +165,7 @@ const Anantham = () => {
         <Card className="container mx-4 mt-5 p-0">
           <CardHeader className="flex flex-col justify-center items-center gap-2">
             <h1 className="text-2xl text-center md:text-4xl font-bold text-skyBlue">
-              Anantham <span className="text-black">Ficon</span>
+              Anantham <span className="text-black">Ifcon</span>
             </h1>
             <CardDescription className="flex justify-center items-center">
               <p className="text-sm text-muted-foreground text-justify md:text-center md:text-md md:w-2/3">
