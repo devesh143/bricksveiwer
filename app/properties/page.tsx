@@ -7,7 +7,7 @@ const PropertiesPage = () => {
     <div className="w-full min-h-screen">
       <div className="w-full bg-skyBlue">
         <div className="container mx-auto flex justify-center items-center py-8">
-          <h1 className="text-xl sm:text-2xl md:text-3xl text-4xl text-white font-white font-bold">
+          <h1 className="sm:text-2xl md:text-3xl text-4xl text-white font-white font-bold">
             <Link
               href="/"
               className="border-white border-b-2 hover:text-black hover:border-black"

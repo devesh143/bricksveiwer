@@ -143,7 +143,7 @@ const CityOfDreams = () => {
     <div className="w-full h-full">
       <section className="w-full bg-skyBlue">
         <div className="container mx-auto flex justify-center items-center py-8">
-          <h1 className="text-xl sm:text-2xl md:text-3xl text-4xl text-white font-white font-bold">
+          <h1 className="sm:text-2xl md:text-3xl text-4xl text-white font-white font-bold">
             <Link
               href="/"
               className="border-white border-b-2 hover:text-black hover:border-black"
@@ -214,7 +214,7 @@ const CityOfDreams = () => {
                 Address:
               </h1>
               <p className="text-md text-skyBlue font-medium text-center md:text-md md:w-2/3">
-                City of Dreams, Zirakpur, Chandigarh, Punjab 140603
+                Kharar - Landran Road, Mohali , Punjab
               </p>
             </div>
             <div className="flex flex-col justify-center items-center mt-5">
