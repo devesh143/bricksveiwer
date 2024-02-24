@@ -73,6 +73,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="500" />
+        <meta
+          property="og:description"
+          content="We provide our clients with the best properties and property management services in India. We are a one-stop shop for all your property needs. We provide a wide range of services, including buying, selling, renting, and leasing."
+        />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background montserrat antialiased",
