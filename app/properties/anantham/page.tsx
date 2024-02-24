@@ -199,7 +199,7 @@ const Anantham = () => {
                 <CarouselContent>
                   <CarouselItem key="1" className="md:basis-1/2">
                     <Image
-                      src="/properties/Anantham/image (1).jpg"
+                      src="/properties/anantham/image (1).jpg"
                       alt="bricksveiwer_sbp"
                       width={500}
                       height={400}
@@ -208,7 +208,7 @@ const Anantham = () => {
                   </CarouselItem>
                   <CarouselItem key="2" className="md:basis-1/2">
                     <Image
-                      src="/properties/Anantham/image (2).jpg"
+                      src="/properties/anantham/image (2).jpg"
                       alt="bricksveiwer_sbp"
                       width={500}
                       height={400}
@@ -233,7 +233,7 @@ const Anantham = () => {
                   <CarouselContent>
                     <CarouselItem key="1">
                       <Image
-                        src="/properties/Anantham/image (3).jpg"
+                        src="/properties/anantham/image (3).jpg"
                         alt="bricksveiwer_mewsgate"
                         width={400}
                         height={900}
@@ -282,7 +282,7 @@ const Anantham = () => {
                     </DialogTrigger>
                     <DialogContent className="h-96 overflow-auto ">
                       <Image
-                        src="/properties/Anantham/price list.jpg"
+                        src="/properties/anantham/price list.jpg"
                         alt="bricksveiwer_mewsgate"
                         width={500}
                         height={900}
