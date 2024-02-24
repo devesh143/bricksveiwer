@@ -74,7 +74,7 @@ export function Footer() {
               target="_blank"
               className="font-bold mt-5 text-5sm hover:text-skyBlue"
             >
-              City Center Anal, Office No.5, Sector 115, Kharar, Landran Road,
+              City Center Ansal, Office No.5, Sector 115, Kharar, Landran Road,
               Mohali, Punjab, India
             </Link>
           </p>
