@@ -169,7 +169,7 @@ const MotiaGroup = () => {
             </h1>
             <CardDescription className="flex justify-center items-center">
               <p className="text-sm text-muted-foreground text-justify md:text-center md:text-md md:w-2/3">
-                Royal Citi is a well planned township with a team of
+                Motia Group's project is a well planned township with a team of
                 professional architects and designers. The project is designed
                 to provide the best of amenities and facilities to its
                 residents.
@@ -327,17 +327,17 @@ const MotiaGroup = () => {
                       <TableRow key="1">
                         <TableCell>2nd Floor (with Terrace Garden)</TableCell>
                         <TableCell>1600 Sq. Ft.</TableCell>
-                        <TableCell>₹ 35,90,000/-</TableCell>
+                        <TableCell>₹ 42,90,000/-</TableCell>
                       </TableRow>
                       <TableRow key="2">
                         <TableCell>1st Floor</TableCell>
                         <TableCell>1600 Sq. Ft.</TableCell>
-                        <TableCell>₹ 37,90,000/-</TableCell>
+                        <TableCell>₹ 44,90,000/-</TableCell>
                       </TableRow>
                       <TableRow key="1">
                         <TableCell>Geound Floor</TableCell>
                         <TableCell>1600 Sq. Ft.</TableCell>
-                        <TableCell>₹ 39,90,000/-</TableCell>
+                        <TableCell>₹ 46,90,000/-</TableCell>
                       </TableRow>
                       <TableRow key="1">
                         <TableCell>Roof Rights</TableCell>

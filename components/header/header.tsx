@@ -304,6 +304,12 @@ export function Header() {
             <Link href="/#interior" className="hover:text-skyBlue">
               <p className="text-lg">Interior Design</p>
             </Link>
+            <Link
+              href="tel:+91-9779660624"
+              className="font-bold hover:text-skyBlue"
+            >
+              <p className="m-2 mx-3 text-md">+91-9779660624</p>
+            </Link>
             <Dialog open={openTwo} onOpenChange={setOpenTwo}>
               <DialogTrigger className="text-lg font-bold text-white bg-safron baseline lg:block border-safron border-2 hover:bg-transparent hover:text-safron transition duration-500 ease-in-out rounded-md px-2 py-1">
                 Contact Me!

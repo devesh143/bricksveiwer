@@ -598,7 +598,7 @@ const Properties = () => {
                     <h3 className="w-full text-justify">
                       Address:{" "}
                       <span className="text-skyBlue">
-                        (Adjoining Kharar-Landran Road), Greater Mohali, Punjab
+                        Landran Road, Mohali, Punjab
                       </span>
                     </h3>
                   </div>
@@ -614,7 +614,7 @@ const Properties = () => {
                     Starting at
                     <span className="font-bold text-skyBlue">
                       {" "}
-                      ₹ 35.90 Lacs
+                      ₹ 42.90 Lacs
                     </span>
                   </h2>
                   <div className="w-full flex justify-between items-end gap-10 mt-4 sm:mt-2">

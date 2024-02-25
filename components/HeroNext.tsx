@@ -78,9 +78,8 @@ export default function HeroNext() {
     <div className="w-full h-full bg-skyBlue z-10">
       <div className="container w-full mx-auto p-10 flex flex-col justify-center gap-5 items-center lg:flex-row lg:h-32">
         <div className="w-full flex flex-col gap-4 justify-center items-center lg:flex-row lg:w-2/3">
-          <SimpleCounter end={425} duration={6000} id="Happy Clients" />
-          <SimpleCounter end={95} duration={6000} id="Properties Sold" />
-          <SimpleCounter end={163} duration={6000} id="Properties Listed" />
+          <SimpleCounter end={225} duration={6000} id="Happy Clients" />
+          <SimpleCounter end={65} duration={6000} id="Properties Sold" />
         </div>
         <div className="w-full flex justify-center items-center lg:w-1/3 lg:justify-end">
           <Link

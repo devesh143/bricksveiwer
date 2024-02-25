@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const cards = [
@@ -79,9 +80,19 @@ export function Slider() {
             spaces. Our services include space planning, furniture and
             accessories selection, color consultation, and more.
           </p>
-          {/* <Button className="mt-5 bg-safron border-safron border-2 text-white text-lg font-medium hover:text-safron hover:bg-white mx-2 sm:mx-0">
-            Learn More
-          </Button> */}
+          <br />
+          <p
+            className="text-sm sm:text-base md:text-lg
+            lg:text-xl text-white text-justify px-2 md:px-0"
+          >
+            To Learn More, Call Us at{" "}
+          </p>
+          <Link
+            href="tel:+91-9779660624"
+            className="mt-1 px-2 py-1 bg-safron border-safron border-2 text-white text-lg font-medium hover:text-safron hover:bg-white mx-2 sm:mx-0 rounded transition duration-300 ease-in-out hover:shadow-md"
+          >
+            +91-9779660624
+          </Link>
         </div>
       </div>
     </div>
