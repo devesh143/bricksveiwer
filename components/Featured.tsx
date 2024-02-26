@@ -129,6 +129,31 @@ const Properties: FC = () => {
       imageAlt: "Motia Group",
     },
     {
+      href: "/properties/anantham",
+      title: "Anantham Ifcon",
+      tags: ["3 BHK", "Luxury"],
+      desc: `Featuring a <strong>3BHK Luxury Apartment</strong> with a
+            Family Lounge, 3 Bedrooms, Modular Open Kitchen, and Lift
+            Lobby. Make your dream home a reality with Anantham.`,
+      address: "Kharar - Landran Road, Mohali , Punjab",
+      startingPrice: "₹ 59.90 Lacs",
+      imageSrc: "/properties/anantham/image (1).jpg",
+      imageAlt: "Anantham",
+    },
+    {
+      href: "/properties/ckhomes",
+      title: "CK 1 BHK Homes",
+      tags: ["1 BHK", "Residential"],
+      desc: `Every fantasy has an imagination dwelled upon dreams, Every
+            and those Beautiful strings weave the structure of
+            magnificent homes, Embrace the foundation of very season
+            with Love, Magic & Wonder only at CK Homes.`,
+      address: "Kharar - Landran Road, Mohali , Punjab",
+      startingPrice: "₹ 22.90 Lacs",
+      imageSrc: "/properties/ckhomes/image (3).jpg",
+      imageAlt: "CK Homes",
+    },
+    {
       href: "/properties/gateway",
       title: "The Gateway Property",
       tags: ["3 BHK", "Residential"],
@@ -154,31 +179,6 @@ const Properties: FC = () => {
       startingPrice: "₹ 70.95 Lacs",
       imageSrc: "/images/mewsgate/mewsgate.png",
       imageAlt: "Mews Gate",
-    },
-    {
-      href: "/properties/anantham",
-      title: "Anantham Ifcon",
-      tags: ["3 BHK", "Luxury"],
-      desc: `Featuring a <strong>3BHK Luxury Apartment</strong> with a
-            Family Lounge, 3 Bedrooms, Modular Open Kitchen, and Lift
-            Lobby. Make your dream home a reality with Anantham.`,
-      address: "Kharar - Landran Road, Mohali , Punjab",
-      startingPrice: "₹ 59.90 Lacs",
-      imageSrc: "/properties/anantham/image (1).jpg",
-      imageAlt: "Anantham",
-    },
-    {
-      href: "/properties/ckhomes",
-      title: "CK 1 BHK Homes",
-      tags: ["1 BHK", "Residential"],
-      desc: `Every fantasy has an imagination dwelled upon dreams, Every
-            and those Beautiful strings weave the structure of
-            magnificent homes, Embrace the foundation of very season
-            with Love, Magic & Wonder only at CK Homes.`,
-      address: "Kharar - Landran Road, Mohali , Punjab",
-      startingPrice: "₹ 22.90 Lacs",
-      imageSrc: "/properties/ckhomes/image (3).jpg",
-      imageAlt: "CK Homes",
     },
     {
       href: "/properties/gatewaycommerce",
