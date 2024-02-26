@@ -169,9 +169,9 @@ const MotiaGroup = () => {
             </h1>
             <CardDescription className="flex justify-center items-center">
               <p className="text-sm text-muted-foreground text-justify md:text-center md:text-md md:w-2/3">
-                Motia Group's project is a well planned township with a team of
-                professional architects and designers. The project is designed
-                to provide the best of amenities and facilities to its
+                Motia Group&apos;s project is a well planned township with a
+                team of professional architects and designers. The project is
+                designed to provide the best of amenities and facilities to its
                 residents.
               </p>
             </CardDescription>

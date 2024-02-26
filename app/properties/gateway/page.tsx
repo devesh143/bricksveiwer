@@ -227,38 +227,254 @@ const Gateway = () => {
                   <CarouselContent>
                     <CarouselItem key="1">
                       <Image
-                        src="/properties/gateway/3bhkFP.jpg"
-                        alt="bricksveiwer_Gateway"
-                        width={900}
-                        height={400}
+                        src="/properties/gateway/3bhk/3bhkfp (1).jpg"
+                        alt="bricksveiwer_mewsgate"
+                        width={400}
+                        height={900}
+                        className="w-full h-full rounded"
+                      />
+                    </CarouselItem>
+                    <CarouselItem key="2">
+                      <Image
+                        src="/properties/gateway/3bhk/3bhkfp (2).jpg"
+                        alt="bricksveiwer_mewsgate"
+                        width={400}
+                        height={900}
+                        className="w-full h-full rounded"
+                      />
+                    </CarouselItem>
+                    <CarouselItem key="3">
+                      <Image
+                        src="/properties/gateway/3bhk/3bhkfp (3).jpg"
+                        alt="bricksveiwer_mewsgate"
+                        width={400}
+                        height={900}
                         className="w-full h-full rounded"
                       />
                     </CarouselItem>
                   </CarouselContent>
+                  <CarouselPrevious className="left-0 bg-white" />
+                  <CarouselNext className="right-0 bg-white" />
                 </Carousel>
                 <div className="w-full md:w-2/3 flex flex-col justify-center items-center">
                   <h1 className="w-full text-2xl text-center md:text-left md:text-4xl font-bold text-skyBlue mb-5">
-                    Gateway 3BHK{" "}
-                    <span className="text-black">Serviced Suite</span>
+                    Residential 3BHK{" "}
+                    <span className="text-black">Independent Floors</span>
+                  </h1>
+                  <div className="w-full flex flex-col justify-center items-start gap-2 md:flex-row">
+                    <div className="md:w-1/2 flex flex-col justify-center items-center">
+                      <Table className="border-2">
+                        <TableHeader className="bg-blue-400">
+                          <TableRow className="text-sm md:text-md font-bold">
+                            <TableHead className="text-white">Floor</TableHead>
+                            <TableHead className="text-white">
+                              Basic Sale Price
+                            </TableHead>
+                          </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                          <TableRow key="1">
+                            <TableCell>Ground Floor</TableCell>
+                            <TableCell>₹ 79,90,000</TableCell>
+                          </TableRow>
+                          <TableRow key="2">
+                            <TableCell>First Floor</TableCell>
+                            <TableCell>74,90,000</TableCell>
+                          </TableRow>
+                          <TableRow key="3">
+                            <TableCell>Second Floor</TableCell>
+                            <TableCell>74,90,000</TableCell>
+                          </TableRow>
+                        </TableBody>
+                      </Table>
+                      <Dialog>
+                        <DialogTrigger className="text-skyBlue text-sm md:text-lg font-bold">
+                          Click to Open Other Charges
+                        </DialogTrigger>
+                        <DialogContent className="h-96 overflow-auto ">
+                          <Table>
+                            <TableCaption>
+                              Two Sides Open East Facing Units
+                            </TableCaption>
+                            <TableBody>
+                              <TableRow key="1">
+                                <TableCell>Club Membership Charges</TableCell>
+                                <TableCell>₹ 40,000/- + GST</TableCell>
+                              </TableRow>
+                              <TableRow key="2">
+                                <TableCell>IFMS</TableCell>
+                                <TableCell>₹ 40,000/-</TableCell>
+                              </TableRow>
+                              <TableRow key="3">
+                                <TableCell>Monthly Maintenance</TableCell>
+                                <TableCell>₹ 2,000/- + GST</TableCell>
+                              </TableRow>
+                            </TableBody>
+                          </Table>
+                        </DialogContent>
+                      </Dialog>
+                    </div>
+                    <Table className="border-2">
+                      <TableHeader className="bg-blue-400">
+                        <TableRow className="text-sm md:text-md font-bold">
+                          <TableHead className="text-white">
+                            Payment Schedule
+                          </TableHead>
+                          <TableHead className="text-white"></TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        <TableRow key="1">
+                          <TableCell>On Application</TableCell>
+                          <TableCell>20% of Total Price + GST</TableCell>
+                        </TableRow>
+                        <TableRow key="2">
+                          <TableCell>Within 7 days of booking</TableCell>
+                          <TableCell>30% of Total Price + GST</TableCell>
+                        </TableRow>
+                        <TableRow key="3">
+                          <TableCell>Within 60 days of booking</TableCell>
+                          <TableCell>25% of Total Price + GST</TableCell>
+                        </TableRow>
+                        <TableRow key="4">
+                          <TableCell>Within 120 days of booking</TableCell>
+                          <TableCell>20% of Total Price + GST</TableCell>
+                        </TableRow>
+                        <TableRow key="5">
+                          <TableCell>
+                            On Offer of Possession & Sale Deed
+                          </TableCell>
+                          <TableCell>
+                            5% pf Total Price + IFMS + Club Charges + Stamp Duty
+                            + GST + Any other charges if applicable
+                          </TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                  </div>
+                </div>
+              </Card>
+              <Card className="w-full pt-5 md:p-5 flex flex-col-reverse jusitfy-center items-center gap-10 md:flex-row-reverse">
+                <Carousel className="w-2/3 md:w-1/3">
+                  <CarouselContent>
+                    <CarouselItem key="1">
+                      <Image
+                        src="/properties/gateway/villas/3bhk_ground.jpg"
+                        alt="bricksveiwer_mewsgate"
+                        width={400}
+                        height={900}
+                        className="w-full h-full rounded"
+                      />
+                    </CarouselItem>
+                    <CarouselItem key="2">
+                      <Image
+                        src="/properties/gateway/villas/3bhk_first.jpg"
+                        alt="bricksveiwer_mewsgate"
+                        width={400}
+                        height={900}
+                        className="w-full h-full rounded"
+                      />
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious className="left-0 bg-white" />
+                  <CarouselNext className="right-0 bg-white" />
+                </Carousel>
+                <div className="w-full md:w-2/3 flex flex-col justify-center items-center">
+                  <h1 className="w-full text-2xl text-center md:text-left md:text-4xl font-bold text-skyBlue mb-5">
+                    3BHK & 4BHK<span className="text-black">Villas</span>
                   </h1>
                   <Table className="border-2 mb-5">
                     <TableHeader className="bg-green-400">
-                      <TableRow className="text-sm md:text-lg font-bold">
-                        <TableHead className="text-white">Tower Name</TableHead>
-                        <TableHead className="text-white">
-                          Super Built Up Area
-                        </TableHead>
-                        <TableHead className="text-white">Price in ₹</TableHead>
+                      <TableRow className="text-sm md:text-md font-bold">
+                        <TableHead className="text-white">Size</TableHead>
+                        <TableHead className="text-white">Category</TableHead>
+                        <TableHead className="text-white">Price</TableHead>
                       </TableRow>
                     </TableHeader>
                     <TableBody>
                       <TableRow key="1">
-                        <TableCell>Serviced Suite</TableCell>
-                        <TableCell>1200 sq.ft.</TableCell>
-                        <TableCell>2,10,00,000</TableCell>
+                        <TableCell>125 sq. yd</TableCell>
+                        <TableCell>3BHK</TableCell>
+                        <TableCell>₹ 1,35,00,000/-</TableCell>
+                      </TableRow>
+                      <TableRow key="2">
+                        <TableCell>133.33 sq. yd</TableCell>
+                        <TableCell>4BHK</TableCell>
+                        <TableCell>₹ 1,55,00,000/-</TableCell>
                       </TableRow>
                     </TableBody>
                   </Table>
+                  <div className="w-full flex flex-col justify-center items-start gap-2 md:flex-row">
+                    <Table className="border-2">
+                      <TableHeader className="bg-blue-400">
+                        <TableRow className="text-sm md:text-md font-bold">
+                          <TableHead className="text-white">
+                            Payment Schedule
+                          </TableHead>
+                          <TableHead className="text-white"></TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        <TableRow key="1">
+                          <TableCell>On Application</TableCell>
+                          <TableCell>25% of Total Price + GST</TableCell>
+                        </TableRow>
+                        <TableRow key="2">
+                          <TableCell>Within 30 days of booking</TableCell>
+                          <TableCell>25% of Total Price + GST</TableCell>
+                        </TableRow>
+                        <TableRow key="3">
+                          <TableCell>Within 40 days of booking</TableCell>
+                          <TableCell>45% of Total Price + GST</TableCell>
+                        </TableRow>
+                        <TableRow key="4">
+                          <TableCell>
+                            On Offer of Possession & Sale Deed
+                          </TableCell>
+                          <TableCell>
+                            5% of Total Price + IFMS + Club Charges + Stamp Duty
+                            + GST + Any other charges if applicable
+                          </TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                    <Table className="border-2">
+                      <TableHeader className="bg-blue-400">
+                        <TableRow className="text-sm md:text-md font-bold">
+                          <TableHead className="text-white">
+                            Other Charges
+                          </TableHead>
+                          <TableHead className="text-white">Amount</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        <TableRow key="1">
+                          <TableCell>Corner Unit</TableCell>
+                          <TableCell>5%</TableCell>
+                        </TableRow>
+                        <TableRow key="2">
+                          <TableCell>East Facing Unit</TableCell>
+                          <TableCell>2%</TableCell>
+                        </TableRow>
+                        <TableRow key="3">
+                          <TableCell>Club Membership Charges</TableCell>
+                          <TableCell>₹ 50,000/- + GST</TableCell>
+                        </TableRow>
+                        <TableRow key="4">
+                          <TableCell>IFMS</TableCell>
+                          <TableCell>₹ 40,000/-</TableCell>
+                        </TableRow>
+                        <TableRow key="5">
+                          <TableCell>Monthly Maintenance</TableCell>
+                          <TableCell>₹ 2,000/- + GSt</TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                  </div>
+                  <p className="text-sm text-muted-foreground text-justify md:text-center md:text-md md:w-2/3">
+                    Total Price = Basic Selling Price + Preferential Loaction
+                    Charges + GST
+                  </p>
                 </div>
               </Card>
             </div>
