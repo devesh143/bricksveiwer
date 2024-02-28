@@ -6,7 +6,7 @@ const Testimonials = () => {
       <div className="container px-6 py-12 mx-auto">
         <div className="grid items-start gap-4 xl:grid-cols-5">
           <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left flex flex-col justify-center items-center">
-            <h2 className="text-4xl font-bold text-white">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white">
               Property{" "}
               <span className="text-safron uppercase font-bold">
                 Management
@@ -33,7 +33,9 @@ const Testimonials = () => {
             <div className="grid gap-4 md:grid-cols-2">
               <div className="grid content-center gap-4">
                 <div className="p-6 rounded bg-white shadow-md dark:bg-gray-900 hover:scale-105 transition duration-300 ease-in-out">
-                  <h1 className="text-lg font-bold">Tenant Management</h1>
+                  <h1 className="text-2xl font-bold underline">
+                    Tenant Management
+                  </h1>
                   <p>
                     There are risks involved in renting out property or keeping
                     a vacant home unattended. There is a persistent worry about
@@ -41,7 +43,9 @@ const Testimonials = () => {
                   </p>
                 </div>
                 <div className="p-6 rounded bg-safron shadow-md text-white hover:scale-105 transition duration-300 ease-in-out">
-                  <h1 className="text-lg font-bold">Renovation</h1>
+                  <h1 className="text-2xl font-bold underline text-black">
+                    Renovation
+                  </h1>
                   <p>
                     Through qualified contractors, we will help you make
                     renovations or repairs to your property. Interiors and
@@ -49,7 +53,7 @@ const Testimonials = () => {
                   </p>
                 </div>
                 <div className="p-6 rounded bg-white shadow-md hover:scale-105 transition duration-300 ease-in-out">
-                  <h1 className="text-lg font-bold">
+                  <h1 className="text-2xl font-bold underline">
                     Real Estate Buying/Selling
                   </h1>
                   <p>
@@ -58,7 +62,9 @@ const Testimonials = () => {
                   </p>
                 </div>
                 <div className="p-6 rounded bg-safron shadow-md text-white hover:scale-105 transition duration-300 ease-in-out">
-                  <h1 className="text-lg font-bold">Property Monitoring</h1>
+                  <h1 className="text-2xl font-bold underline text-black">
+                    Property Monitoring
+                  </h1>
                   <p>
                     There are several reasons why a property owner may need to
                     monitor their property. We provide property monitoring
@@ -68,7 +74,7 @@ const Testimonials = () => {
               </div>
               <div className="grid content-center gap-4">
                 <div className="p-6 bg-white rounded shadow-md hover:scale-105 transition duration-300 ease-in-out">
-                  <h1 className="text-lg font-bold">Construction</h1>
+                  <h1 className="text-2xl font-bold underline">Construction</h1>
                   <p>
                     Through qualified contractors, we will help you make
                     renovations or repairs to your property. Interior design,
@@ -77,7 +83,9 @@ const Testimonials = () => {
                   </p>
                 </div>
                 <div className="p-6 rounded bg-skyBlue shadow-md dark:bg-gray-900 text-white hover:scale-105 transition duration-300 ease-in-out">
-                  <h1 className="text-lg font-bold">Rental Assistance</h1>
+                  <h1 className="text-2xl font-bold underline text-black">
+                    Rental Assistance
+                  </h1>
                   <p>
                     We have a Team of Specialized Agents created specifically to
                     meet the demands and provide for NRIs and people is called
@@ -85,7 +93,9 @@ const Testimonials = () => {
                   </p>
                 </div>
                 <div className="p-6 bg-white rounded shadow-md hover:scale-105 transition duration-300 ease-in-out">
-                  <h1 className="text-lg font-bold">Interior Design</h1>
+                  <h1 className="text-2xl font-bold underline">
+                    Interior Design
+                  </h1>
                   <p>
                     We are able to meet all of your interior demands. We gladly
                     satisfy your needs and offer a helpful and dependable
