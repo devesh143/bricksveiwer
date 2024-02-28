@@ -82,6 +82,11 @@ export default function RootLayout({
           property="og:description"
           content="We provide our clients with the best properties and property management services in India. We are a one-stop shop for all your property needs. We provide a wide range of services, including buying, selling, renting, and leasing."
         />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9649742947453624"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body
         className={cn(
