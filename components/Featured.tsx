@@ -142,7 +142,7 @@ const Properties: FC = () => {
     },
     {
       href: "/properties/ckhomes",
-      title: "CK 1 BHK Homes",
+      title: "CK Homes 1BHK ",
       tags: ["1 BHK", "Residential"],
       desc: `Every fantasy has an imagination dwelled upon dreams, Every
             and those Beautiful strings weave the structure of
