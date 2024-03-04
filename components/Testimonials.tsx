@@ -82,7 +82,7 @@ const Testimonials = () => {
                     services.
                   </p>
                 </div>
-                <div className="p-6 rounded bg-skyBlue shadow-md dark:bg-gray-900 text-white hover:scale-105 transition duration-300 ease-in-out">
+                <div className="p-6 rounded bg-safron shadow-md dark:bg-gray-900 text-white hover:scale-105 transition duration-300 ease-in-out">
                   <h1 className="text-2xl font-bold underline text-black">
                     Rental Assistance
                   </h1>
