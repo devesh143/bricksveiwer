@@ -13,9 +13,10 @@ const montserrat = Montserrat({ subsets: ["latin"], variable: "--montserrat" });
 export const metadata: Metadata = {
   metadataBase: new URL("https://bricksviewer.com"),
   generator: "BricksViewer.com",
-  title: "BricksViewer.com",
+  title:
+    "Explore the World of Properties at BricksViewer.com - Your Ultimate Guide to Real Estate in India",
   description:
-    "We provide our clients with the best properties and property management services in India. We are a one-stop shop for all your property needs. We provide a wide range of services, including buying, selling, renting, and leasing.",
+    "BricksViewer.com - India’s trusted property hub. Offering comprehensive services for all your property needs, including buying, selling, renting, and leasing. Experience the best in property management.",
   keywords: [
     "Real Estate",
     "Property Management",
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://bricksviewer.com",
+    url: "https://www.bricksviewer.com",
     title: "BricksViewer.com",
     description:
       "We provide our clients with the best properties and property management services in India. We are a one-stop shop for all your property needs. We provide a wide range of services, including buying, selling, renting, and leasing.",
