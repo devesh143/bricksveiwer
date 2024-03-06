@@ -14,9 +14,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://bricksviewer.com"),
   generator: "BricksViewer.com",
   title:
-    "Explore the World of Properties at BricksViewer.com - Your Ultimate Guide to Real Estate in India",
+    "BricksViewer.com - Property Management, Rental Assistance, Interior Design.",
   description:
-    "BricksViewer.com - India’s trusted property hub. Offering comprehensive services for all your property needs, including buying, selling, renting, and leasing. Experience the best in property management.",
+    "We Offer comprehensive services for all your property needs, including buying, selling, renting, and leasing. Experience the best in property management.",
   keywords: [
     "Real Estate",
     "Property Management",
