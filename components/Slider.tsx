@@ -88,10 +88,10 @@ export function Slider() {
             To Learn More, Call Us at{" "}
           </p>
           <Link
-            href="tel:+91-9779660624"
+            href="tel:+91-9411758303"
             className="mt-1 px-2 py-1 bg-safron border-safron border-2 text-white text-lg font-medium hover:text-safron hover:bg-white mx-2 sm:mx-0 rounded transition duration-300 ease-in-out hover:shadow-md"
           >
-            +91-9779660624
+            +91-9411758303
           </Link>
         </div>
       </div>

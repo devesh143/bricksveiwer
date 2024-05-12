@@ -185,7 +185,7 @@ const Anantham = () => {
                 Address:
               </h1>
               <p className="text-md text-skyBlue font-medium text-center md:text-md md:w-2/3">
-                Kharar - Landran Road, Mohali , Punjab
+              Nainital, Uttarakhand, India
               </p>
             </div>
             <div className="flex flex-col justify-center items-center mt-5">

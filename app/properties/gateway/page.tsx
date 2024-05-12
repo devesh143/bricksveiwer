@@ -172,7 +172,7 @@ const Gateway = () => {
               <p className="text-sm text-muted-foreground text-justify md:text-center md:text-md md:w-2/3">
                 Welcome to <strong>THE GATEWAY</strong>, a township nestled
                 along the
-                <strong> Chandigarh-Ludhiana Expressway</strong> sprawling
+                <strong> Nainital Expressway</strong> sprawling
                 around ten acres is eager to accommodate your cherished dreams.
                 Conjuring all elements of blissful luxury, The Gateway lives up
                 to all your expectations. A close proximity to major arterials
@@ -211,7 +211,7 @@ const Gateway = () => {
                 Address:
               </h1>
               <p className="text-md text-skyBlue font-medium text-center md:text-md md:w-2/3">
-                Chandigarh-Ludhiana Highway, NH-95, Kharar, S.A.S Nagar, Punjab
+              Nainital, Uttarakhand, India
               </p>
             </div>
             <div

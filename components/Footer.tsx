@@ -74,8 +74,7 @@ export function Footer() {
               target="_blank"
               className="font-bold mt-5 text-5sm hover:text-skyBlue"
             >
-              City Center Ansal, Office No.5, Sector 115, Kharar, Landran Road,
-              Mohali, Punjab, India
+              Nainital, Uttarakhand, India
             </Link>
           </p>
           <Link
@@ -88,13 +87,13 @@ export function Footer() {
             href="tel: +91 9779660624"
             className="font-bold text-sm hover:text-skyBlue"
           >
-            +91 9779660624
+            +91 9411758303
           </Link>
         </div>
         <div className="flex flex-col items-center justify-center w-80 lg:w-1/4 lg:items-end">
           <h1 className="text-2xl font-bold text-center">Socials</h1>
           <Link
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/pravesh-chhimwal-3b062a286//"
             className="mt-4 text-2sm hover:text-skyBlue"
           >
             LinkedIn

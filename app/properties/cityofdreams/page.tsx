@@ -170,7 +170,7 @@ const CityOfDreams = () => {
             <CardDescription className="flex justify-center items-center">
               <p className="text-sm text-muted-foreground text-justify md:text-center md:text-md md:w-2/3">
                 City of Dreams is a residential project by SBP Group in{" "}
-                <strong>Landran Road, Mohali , Punjab</strong> . The project
+                <strong>Nainital, Uttarakhand</strong> . The project
                 offers <strong>2BHK and 3BHK apartments</strong> with perfect
                 combination of contemporary architecture and features to provide
                 comfortable living.
@@ -214,7 +214,7 @@ const CityOfDreams = () => {
                 Address:
               </h1>
               <p className="text-md text-skyBlue font-medium text-center md:text-md md:w-2/3">
-                Kharar - Landran Road, Mohali , Punjab
+              Nainital, Uttarakhand, India
               </p>
             </div>
             <div className="flex flex-col justify-center items-center mt-5">

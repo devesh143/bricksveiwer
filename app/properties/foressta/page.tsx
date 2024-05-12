@@ -171,7 +171,7 @@ const Foressta = () => {
             </h1>
             <CardDescription className="flex justify-center items-center">
               <p className="text-sm text-muted-foreground text-justify md:text-center md:text-md md:w-2/3">
-                Located in <strong>Solan, Himachal Pradesh</strong>, Foressta is
+                Located in <strong>Nainital</strong>, Foressta is
                 a unique blend of nature and luxury. It is a place where you can
                 live life to the fullest.
               </p>
@@ -184,7 +184,7 @@ const Foressta = () => {
                 Address:
               </h1>
               <p className="text-md text-skyBlue font-medium text-center md:text-md md:w-2/3">
-                City of Dreams, Zirakpur, Chandigarh, Punjab 140603
+              Nainital, Uttarakhand, India
               </p>
             </div>
             <div

@@ -201,7 +201,7 @@ const GatewayCommercial = () => {
                 Address:
               </h1>
               <p className="text-md text-skyBlue font-medium text-center md:text-md md:w-2/3">
-                Chandigarh-Ludhiana Highway, NH-95, Kharar, S.A.S Nagar, Punjab
+              Nainital, Uttarakhand, India
               </p>
               <h1 className="text-2xl text-center md:text-3xl font-bold text-skyBlue mb-2">
                 Floor Plans

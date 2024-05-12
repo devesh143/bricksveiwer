@@ -212,14 +212,9 @@ const MewsGate = () => {
             <CardDescription className="flex justify-center items-center">
               <p className="text-sm text-muted-foreground text-justify md:text-center md:text-md md:w-2/3">
                 Mews Gate is One of the most admired address on{" "}
-                <strong>NH21, Kharar - Kurali Road</strong>. Just 5 minutes away
-                from Chandigarh border, it is surrounded by well developed
-                commercial projects and educational institutions such as{" "}
-                <strong>
-                  Chandigarh University, Rayat Bahra University, Doaba Group of
-                  Colleges, Cambridge School
-                </strong>{" "}
-                and more.
+                <strong>Nainital, Uttarakhand, India</strong>. Just 5 minutes away
+                from Bailparao, it is surrounded by well developed
+                commercial projects and educational institutions.
               </p>
             </CardDescription>
           </CardHeader>
@@ -233,7 +228,7 @@ const MewsGate = () => {
                 Address:
               </h1>
               <p className="text-md text-skyBlue font-medium text-center md:text-md md:w-2/3">
-                NH21, Kharar - Kurali Road, Punjab
+                Nainital, Uttarakhand, India
               </p>
             </div>
             <div className="flex flex-col justify-center items-center mt-5">

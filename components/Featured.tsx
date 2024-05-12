@@ -106,11 +106,11 @@ const Properties: FC = () => {
       title: "City of Dreams Apartments",
       tags: ["3 BHK", "4 BHK", "5 BHK", "Penthouse"],
       desc: `City of Dreams is a residential project by SBP Group in
-            <strong>Landran Road, Mohali, Punjab</strong> . The project
+            <strong>Nainital, Uttarakhand</strong> . The project
             offers <strong>2BHK and 3BHK apartments</strong> with
             perfect combination of contemporary architecture and
             features to provide comfortable living.`,
-      address: "Kharar - Landran Road, Mohali , Punjab",
+      address: "Nainital, Uttarakhand, India",
       startingPrice: "₹ 73.90 Lacs",
       imageSrc: "/properties/sbp/sbp.png",
       imageAlt: "City of Dreams",
@@ -123,7 +123,7 @@ const Properties: FC = () => {
             professional architects and designers. The project is
             designed to provide the best of amenities and facilities to
             its residents.`,
-      address: "Landran Road, Mohali, Punjab",
+      address: "Nainital, Uttarakhand, India",
       startingPrice: "₹ 42.90 Lacs",
       imageSrc: "/properties/motiagroup/image.jpg",
       imageAlt: "Motia Group",
@@ -135,7 +135,7 @@ const Properties: FC = () => {
       desc: `Featuring a <strong>3BHK Luxury Apartment</strong> with a
             Family Lounge, 3 Bedrooms, Modular Open Kitchen, and Lift
             Lobby. Make your dream home a reality with Anantham.`,
-      address: "Kharar - Landran Road, Mohali , Punjab",
+      address: "Nainital, Uttarakhand, India",
       startingPrice: "₹ 59.90 Lacs",
       imageSrc: "/properties/anantham/image (1).jpg",
       imageAlt: "Anantham",
@@ -148,7 +148,7 @@ const Properties: FC = () => {
             and those Beautiful strings weave the structure of
             magnificent homes, Embrace the foundation of very season
             with Love, Magic & Wonder only at CK Homes.`,
-      address: "Kharar - Landran Road, Mohali , Punjab",
+      address: "Nainital, Uttarakhand, India",
       startingPrice: "₹ 22.90 Lacs",
       imageSrc: "/properties/ckhomes/image (3).jpg",
       imageAlt: "CK Homes",
@@ -157,12 +157,12 @@ const Properties: FC = () => {
       href: "/properties/gateway",
       title: "The Gateway Property",
       tags: ["3 BHK", "Residential"],
-      desc: `Township nestled along the <strong>Chandigarh-Ludhiana Expressway</strong>.
+      desc: `Township nestled along the <strong>Nainital, Uttarakhand</strong>.
             The Gateway is a perfect blend of contemporary and modern
             architecture. It is a place where you can live life to the
             fullest.`,
       address:
-        "Chandigarh-Ludhiana Highway, NH-95, Kharar, S.A.S Nagar, Punjab",
+        "Nainital, Uttarakhand, India",
       startingPrice: "₹ 74.90 Lacs",
       imageSrc: "/images/gateway/gateway.png",
       imageAlt: "The Gateway",
@@ -172,10 +172,10 @@ const Properties: FC = () => {
       title: "Mews Gate Property",
       tags: ["2 BHK", "3 BHK", "4 BHK", "Residential"],
       desc: `Mews Gate is One of the most admired address on
-            <strong>NH21, Kharar - Kurali Road</strong>. It is
+            <strong>Nainital, Uttarakhand, India</strong>. It is
             surrounded by well developed commercial projects and
             educational institutions.`,
-      address: "NH21, Kharar - Kurali Road",
+      address: "Nainital, Uttarakhand, India",
       startingPrice: "₹ 70.95 Lacs",
       imageSrc: "/images/mewsgate/mewsgate.png",
       imageAlt: "Mews Gate",
@@ -185,11 +185,11 @@ const Properties: FC = () => {
       title: "The Gateway Commercial",
       tags: ["Shops", "Showrooms", "Commercial"],
       desc: `The bustling commercial corner in
-            <strong>The Gateway</strong> premises is a boon for the
+            <strong>Bailparao</strong> premises is a boon for the
             residents and businessmen alike. The Gateway offers a wide
             range of commercial spaces to suit every need.`,
       address:
-        "Chandigarh-Ludhiana Highway, NH-95, Kharar, S.A.S Nagar, Punjab",
+        "Nainital, Uttarakhand, India",
       startingPrice: "₹ 1.90 crores",
       imageSrc: "/properties/gatewayc/image.jpg",
       imageAlt: "The Gateway Commercial",
@@ -198,10 +198,10 @@ const Properties: FC = () => {
       href: "/properties/foressta",
       title: "Foressta Serviced Suites/Villas",
       tags: ["Suite", "Villa", "Residential", "Exotic"],
-      desc: `Located in <strong>Solan, Himachal Pradesh</strong>,
+      desc: `Located in <strong>Nainital, Uttarakhand</strong>,
               Foressta is a unique blend of nature and luxury. It is a
               place where you can live life to the fullest.`,
-      address: "Solan, Himachal Pradesh",
+      address: "Nainital, Uttarakhand, India",
       startingPrice: "₹ 2.1 Crore",
       imageSrc: "/images/hero/2.jpg",
       imageAlt: "Foressta",
