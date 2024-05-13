@@ -78,10 +78,10 @@ export function Footer() {
             </Link>
           </p>
           <Link
-            href="mailto: askbricksviewer@gmail.com"
+            href="mailto: praveshchhimwal@gmail.com"
             className="font-bold mt-5 text-5sm hover:text-skyBlue"
           >
-            askbricksviewer@gmail.com
+            praveshchhimwal@gmail.com
           </Link>
           <Link
             href="tel: +91 9779660624"
